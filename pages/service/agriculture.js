@@ -61,7 +61,7 @@ const AgricultureService = () => {
 
                     {AgricultureServiceData.map((service, index) => {
                         return (
-                            <div className="row services_card_container">
+                            <div className="row services_card_container" key={index}>
                                 <div className="col-lg-6 col-md-12 m-b30  ">
                                     <div className='services_card_img'>
                                         <Image src={service.Image} data-tilt alt='Service' />
