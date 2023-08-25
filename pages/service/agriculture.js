@@ -70,8 +70,8 @@ const AgricultureService = () => {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="services_card_content">
-                                        <h3 className="services_card_heading">{service.Heading}<span className="bg-primary"></span></h3>
-                                        <p><b>{service.Subheading}</b></p>
+                                        <h3>{service.Heading}</h3>
+                                        <p>{service.Subheading}</p>
                                         <p>{service.Description} </p>
                                     </div>
                                 </div>

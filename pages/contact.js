@@ -74,10 +74,14 @@ const ContactPage = () => {
                 </header>
 
                 <div className="page_section">
+                <div className="page_section_heading">
+              <h2>Let&apos;s Connect</h2>
+            </div>
+
                     <div className="contact_form_container">
 
                         <form className="contact_form" >
-                            <h3 className="contact_form_title">Let&apos;s Connect</h3>
+                            {/* <h3 className="contact_form_title">Let&apos;s Connect</h3> */}
 
                             <div className="row">
                                 <div className="col-lg-6">
@@ -138,15 +142,17 @@ const ContactPage = () => {
 
                                 <div className="col-lg-12">
 
-
+                                    <div className='card_btn contact_btn'>
                                     <button
                                         onClick={onSubmit}
-                                        className="site_button"
+                                        // className="site_button"
                                         disabled={isLoading}
                                         style={{ opacity: isLoading ? 0.5 : 1, pointerEvents: isLoading ? 'none' : 'auto' }}
                                     >
                                         <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
                                     </button>
+                                    </div>
+                                    
                                     <p>{message}</p>
                                 </div>
                             </div>

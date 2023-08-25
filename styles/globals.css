@@ -574,9 +574,10 @@ padding: 30px;
     margin-top: 50px;
 }
 
-.contact_form {}
+.contact_form {
+    padding: 20px;
+}
 
-.form_group {}
 
 .contact_page_card {
     background-color: #fff;
@@ -611,7 +612,7 @@ padding: 30px;
     border-bottom: 1px solid rgb(229, 229, 229);
     /* line-height: 20px; */
     /* padding: 9px 12px; */
-    margin-bottom: 10px;
+    margin: 20px 10px;
 }
 
 .input_group {
@@ -619,12 +620,23 @@ padding: 30px;
 
 }
 
-.input_group input,
-textarea {
-    border: none;
-    padding: 5px 20px;
+.input_group input{
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    border: none;
+
+}
+.input_group textarea {
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 
@@ -641,9 +653,12 @@ textarea {
 }
 
 .input_group_addon i {
-    line-height: 26px;
     color: #6cc000;
-    font-size: 14px;
+    font-size: 31px;
+    /* line-height: 31px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 
 }
 
@@ -706,6 +721,24 @@ textarea {
     border-radius: 10px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     
+}
+.services_card_content{
+    padding: 10px;
+}
+.services_card_content h3{
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.services_card_content p{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.services_card_content ul li{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .agrocast_app_feature_container {
@@ -906,7 +939,7 @@ textarea {
     font-size: 28px;
     cursor: pointer;
 }
-
+/* 
 .home_contact_form_container {}
 
 .home_form_group {
@@ -937,7 +970,7 @@ textarea {
 .home_form_input textarea:focus {
     outline: none;
 
-}
+} */
 
 .round_btn {
     padding: 15px 40px;

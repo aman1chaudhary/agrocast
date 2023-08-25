@@ -35,7 +35,7 @@ const SolarService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Survey using UAV</h3>
+                                <h3>Survey using UAV</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 <ul>
                                     <li>Develop high resolution DEM, DSM, 3D model and Point cloud of study area.
@@ -56,13 +56,13 @@ const SolarService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Hydrological Modeling using Physics based Model</h3>
+                                <h3>Hydrological Modeling using Physics based Model</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 {/* <p>Introducing Agrocast's Solar Power service – your gateway to a brighter and more sustainable future. Imagine fields bathed in sunlight, not only nurturing crops but also generating power to fuel your operations. Our expert team specializes in crafting solar solutions that seamlessly integrate with your farm's layout and energy requirements. By harnessing the power of solar panels, you'll not only enjoy reduced energy costs but also contribute to a more resilient and environmentally conscious agricultural industry. From initial assessment to system installation and ongoing maintenance, Agrocast is your partner in cultivating clean energy for a thriving tomorrow. </p> */}
                                 <ul>
                                     <li>Watershed delineation.</li>
-                                        <li> Simulate water budget components (Runoff, Baseflow, Soil Moisture and Evapotranspiration).</li>
-                                        <li>Analysis of flood/drought events.</li>
+                                    <li> Simulate water budget components (Runoff, Baseflow, Soil Moisture and Evapotranspiration).</li>
+                                    <li>Analysis of flood/drought events.</li>
                                 </ul>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ const SolarService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Hydraulics Modeling to simulate flood inundation</h3>
+                                <h3>Hydraulics Modeling to simulate flood inundation</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 {/* <p></p> */}
                                 <ul>

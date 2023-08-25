@@ -36,7 +36,7 @@ const WaterService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Hydrological Assessment<span className="bg-primary"></span></h3>
+                                <h3>Hydrological Assessment</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 <p>A comprehensive report on watershed management is offered by incorporating current data on aspects such as land use, land cover, soil, elevation, and climatic variables. Physics-based hydrological modeling has been used to simulate the water budget and stream flow. Leveraging our expertise, stakeholders, including solar park owners, insurance companies, state water departments, and dam authorities, can make well-informed decisions regarding resource allocation and development within the study area.</p>
                             </div>
@@ -54,7 +54,7 @@ const WaterService = () => {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Dam Breach Analysis and Emergency Action Plan (EAP)<span className="bg-primary"></span></h3>
+                                <h3>Dam Breach Analysis and Emergency Action Plan (EAP)</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
 
                                 <p>
@@ -90,7 +90,7 @@ const WaterService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Scouring and Sedimentation analysis for Hydraulic Infrastructure Resilience<span className="bg-primary"></span></h3>
+                                <h3>Scouring and Sedimentation analysis for Hydraulic Infrastructure Resilience</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 <p>We provide detailed insights into the erosion (scouring) and deposition (sedimentation) dynamics surrounding hydraulic structures by utilizing advanced software simulations for various scenarios. Our efforts are geared towards ensuring the durability, safety, and efficient operation of hydraulic structures, addressing the challenges posed by scouring and sedimentation comprehensively.</p>
                             </div>
@@ -107,7 +107,7 @@ const WaterService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Comprehensive Ground Water Assessment<span className="bg-primary"></span></h3>
+                                <h3>Comprehensive Ground Water Assessment</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 <p>We provide expert groundwater study and assessment using state-of-the-art tool and model. Our services encompassed detailed groundwater mapping, reliable estimations of aquifer recharge rates, identification of ground water zones and devising sustainable groundwater management plans by designing artificial recharge structures to safeguard community water resources.</p>
                             </div>

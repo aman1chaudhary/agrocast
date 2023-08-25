@@ -43,8 +43,8 @@ const ClimateRiskService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Extreme Weather Warning<span className="bg-primary"></span></h3>
-                                <p><b>Receive bad weather alerts</b></p>
+                                <h3>Extreme Weather Warning</h3>
+                                <p>Receive bad weather alerts</p>
                                 <p>Alert before extreme weather events help to prepare during the event. We transmit alerts well in advance of extreme precipitation and heatwaves. </p>
                             </div>
                         </div>
@@ -60,8 +60,8 @@ const ClimateRiskService = () => {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Climate Change Assessment<span className="bg-primary"></span></h3>
-                                <p><b>Understand climate variability</b></p>
+                                <h3>Climate Change Assessment</h3>
+                                <p>Understand climate variability</p>
                                 <p>Anthropogenic activities have increased earth temperature by 1.5 ºC over the last century, and the temperature is projected to increase by 1.5-2 ºC by the end of the 21st century. The temperature rise as a signal of climate change puts tremendous pressure on the agriculture and industry sectors. It is essential to know the past as well as the projected climate to build climate resilience society. We provide high-resolution climate change assessment report. </p>
                             </div>
                         </div>
@@ -77,8 +77,8 @@ const ClimateRiskService = () => {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3 className="services_card_heading">Climate Resilience Strategy<span className="bg-primary"></span></h3>
-                                <p><b>Know climate risk</b></p>
+                                <h3>Climate Resilience Strategy</h3>
+                                <p>Know climate risk</p>
                                 <p>We provide services to map risk associated due to the changing climate. It helps to identify vulnerable areas, adaptation, mitigation, and resilience strategies to cope up with climate change.</p>
                             </div>
                         </div>
