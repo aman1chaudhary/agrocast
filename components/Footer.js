@@ -14,7 +14,7 @@ const Footer = () => {
                 <ul>
                   <li> <Link href="/"><i className="fas fa-solid fa-angle-right"></i> Home </Link></li>
                   <li> <Link href="/about"><i className="fas fa-solid fa-angle-right"></i> About Us</Link></li>
-                  <li> <Link href="/service"><i className="fas fa-solid fa-angle-right"></i> Our Services</Link></li>
+                  {/* <li> <Link href="/service"><i className="fas fa-solid fa-angle-right"></i> Our Services</Link></li> */}
                   <li><Link href="/contact"><i className="fas fa-solid fa-angle-right"></i> Contact Us</Link></li>
                 </ul>
               </div>
@@ -23,7 +23,7 @@ const Footer = () => {
               <div className="footer_item">
                 <h5>Useful Links</h5>
                 <ul>
-                  <li> <Link href="/terms-and-condition"><i className="fas fa-solid fa-angle-right"></i> Terms and Conditions </Link></li>
+                  <li> <Link href="/terms-and-condition"><i className="fas fa-solid fa-angle-right"></i> Terms & Conditions </Link></li>
                   <li> <Link href="/privacy-policy"><i className="fas fa-solid fa-angle-right"></i> Privacy Policies</Link></li>
                   <li> <Link href="/refund-and-cancellation-policy"><i className="fas fa-solid fa-angle-right"></i> Refund & Cancellation Policy</Link></li>
                 </ul>
