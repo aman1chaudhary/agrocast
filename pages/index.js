@@ -65,21 +65,19 @@ export default function Home() {
 
           <div className='page_section'>
           <div className="page_section_heading">
-              <h2>A Glance of Our Work</h2>
+              {/* <h2>A Glance of Our Work</h2> */}
             </div>
             <div className='row'>
-              <div className='col-lg-12 col-md-12'>
+              <div className='col-lg-9 col-md-12'>
                 <ProjectMap />
               </div>
-              {/* <div className='col-lg-5 col-md-12'>
+              <div className='col-lg-3 col-md-12'>
                 <div className="page_section_heading" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
-                  <p>
-                    In our journey at AgroCast, we take immense pride in our past projects, each a testament to our unwavering commitment to agriculture, water, and climate change sectors. Our history is woven with successes in climate-resilient farming initiatives, the implementation of solar-powered agricultural solutions, optimizing water resource management, and providing crop-specific advisory programs. Through these projects, we&apos;ve not only enhanced agricultural practices but also empowered communities with knowledge and tools to thrive in an ever-changing environment. Explore our rich portfolio of past endeavors, a testament to our dedication to sustainable growth and resilience
-                  </p>
+                  <p>In our journey at AgroCast, we take immense pride in our past projects, each a testament to our unwavering commitment to agriculture, water, and climate change sectors. Our history is woven with successes in climate-resilient farming initiatives, the implementation of solar-powered agricultural solutions, optimizing water resource management, and providing crop-specific advisory programs. Through these projects, we&apos;ve not only enhanced agricultural practices but also empowered communities with knowledge and tools to thrive in an ever-changing environment.</p>
                 </div>
 
-                <Link
+                {/* <Link
                   href="#"
                   className="site-button btn-icon"
                   onClick={(e) => {
@@ -93,9 +91,9 @@ export default function Home() {
                   Know more <i className="fa fa-angle-double-right"></i>
 
 
-                </Link>
+                </Link> */}
 
-              </div> */}
+              </div>
             </div>
 
 

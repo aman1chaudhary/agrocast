@@ -45,10 +45,10 @@ const ProjectMap = () => {
   return (
     <>
       <MapContainer
-        center={[23, 86]}
+        center={[23, 82]}
         // zoomControl={false}
         style={{ width: '100%', height: "600px",borderRadius:"5px", backgroundColor: 'white', boxShadow:"0 0 2px 0 rgba(0, 0, 0, 0.1)" }}
-        zoom={4.5}
+        zoom={4}
         zoomDelta={0.5}
         zoomSnap={0}
         maxZoom={7}
@@ -107,15 +107,15 @@ const ProjectMap = () => {
 
           
         </FeatureGroup>
-        <div className="legend_container">
+        {/* <div className="legend_container">
         <p>In our journey at AgroCast, we take immense pride in our past projects, each a testament to our unwavering commitment to agriculture, water, and climate change sectors. Our history is woven with successes in climate-resilient farming initiatives, the implementation of solar-powered agricultural solutions, optimizing water resource management, and providing crop-specific advisory programs. Through these projects, we&apos;ve not only enhanced agricultural practices but also empowered communities with knowledge and tools to thrive in an ever-changing environment. Explore our rich portfolio of past endeavors, a testament to our dedication to sustainable growth and resilience</p>
-            {/* <h5>Legend</h5> */}
-                {/* <div  className="legend_item">
+            <h5>Legend</h5>
+                <div  className="legend_item">
                   
                     <span className="legend_item_circle" style={{ backgroundColor: "blue" }} />
                     <span className="legend-label">Sites we have worked so far.</span>
-                </div> */}
-        </div>
+                </div>
+        </div> */}
 
 
 
