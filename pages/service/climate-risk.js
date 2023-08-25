@@ -89,9 +89,13 @@ const ClimateRiskService = () => {
                 <div className='page_section'>
                     <div className="agrocast_dashboard_container">
                         <div className="row">
-                            <div className="col-lg-5 " >
-                                <h2>Agrocast Dashboard</h2>
-                                <ul  className="list-checked primary">
+                            <div className="col-lg-5" >
+                                <div className="page_section_heading">
+                                    <h2 style={{textAlign:"left"}}>Agrocast Dashboard</h2>
+                                </div>
+
+
+                                <ul className="list-checked">
                                     <li><span>Crop growth (NDVI), Crop health (EVI) and Soil condition (NDMI).</span></li>
                                     <li><span>Water body monitoring.</span></li>
                                     <li><span>Land use and land cover change mapping.</span></li>
@@ -100,10 +104,10 @@ const ClimateRiskService = () => {
 
                                 </ul>
                                 <div className='generl_btn'>
-                                <a href='https://agrocastanalytics.com/gcc-dashboard/index.php' className="site-button  btn-icon" target='blank'>Explore Dashboard <i className="fa fa-angle-double-right"></i></a>
+                                    <a href='https://agrocastanalytics.com/gcc-dashboard/index.php' className="site-button  btn-icon" target='blank'>Explore Dashboard <i className="fa fa-angle-double-right"></i></a>
                                 </div>
 
-                                
+
 
                             </div>
 

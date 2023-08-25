@@ -170,6 +170,24 @@
     .contact_btn button{
         width: 100%;
     }
+    .services_card_content h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .services_card_content p{
+        font-size: 14px;
+    
+    }
+    .services_card_content ul li{
+        font-size: 14px;
+    
+    }
+    .list-checked li:before {
+    font-size: 14px;
+}
+.list-checked li{
+    font-size: 14px;
+}
     
 
 
