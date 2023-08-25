@@ -13,6 +13,12 @@ import Link from 'next/link';
 
 const AgricultureServiceData = [
     {
+        Heading: "Agriculture Aid",
+        Subheading: "Get agriculture advisory from sowing to harvesting",
+        Image: AgriServices1,
+        Description: "Agriculture aid helps to mitigate the worst impact on crop yield and health during unfavorable events. We analyze the weather, soil moisture, and crop health indices to generate agriculture advisory. Agriculture aid provides highly accurate and real time information on the right time of sowing/harvesting, application of pesticide, and irrigation. The agriculture aid is available local languages via our mobile application."
+    },
+    {
         Heading: "Crop Health Monitor",
         Subheading: "Monitor crop stress",
         Image: AgriServices3,
@@ -32,12 +38,7 @@ const AgricultureServiceData = [
         Image: AgriServices4,
         Description: "Using high resolution satellite images modeling along with Machine Learning, we classify crops and estimate crop yield for season."
     },
-    {
-        Heading: "Agriculture Aid",
-        Subheading: "Get agriculture advisory from sowing to harvesting",
-        Image: AgriServices1,
-        Description: "Agriculture aid helps to mitigate the worst impact on crop yield and health during unfavorable events. We analyze the weather, soil moisture, and crop health indices to generate agriculture advisory. Agriculture aid provides highly accurate and real time information on the right time of sowing/harvesting, application of pesticide, and irrigation. The agriculture aid is available local languages via our mobile application."
-    },
+
 
 ]
 
