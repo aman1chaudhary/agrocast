@@ -13,28 +13,30 @@ import Link from 'next/link';
 
 const AgricultureServiceData = [
     {
-        Heading: "Agriculture Aid",
-        Subheading: "Get agriculture advisory from sowing to harvesting",
-        Image: AgriServices1,
-        Description: "Agriculture aid helps to mitigate the worst impact on crop yield and health during unfavorable events. We analyze the weather, soil moisture, and crop health indices to generate agriculture advisory. Agriculture aid provides highly accurate and real time information on the right time of sowing/harvesting, application of pesticide, and irrigation. The agriculture aid is available local languages via our mobile application."
+        Heading: "Crop Health Monitor",
+        Subheading: "Monitor crop stress",
+        Image: AgriServices3,
+        Description: "The Normalized Difference Vegetation Index (NDVI) and Vegetation Health Index are used to monitor crop health. We provide weekly vegetation health indexes. Utilizing real time plant and soil data and past soil data, we provide advisory on crop health and preventive measures to minimize damage to crops and prevent crop failure."
     },
+
     {
         Heading: "Drought Monitor",
         Subheading: "Monitor drought propagation with time",
         Image: AgriServices2,
         Description: "Drought is the costliest natural disaster. Monitoring drought ahead of time helps reduce the unpleasant impact on water and agriculture sectors. We monitor meteorological and hydrological drought at fine resolution. The drought monitoring system provides information on drought severity and area extent well in advance giving the partners time to mitigate and counter the impact of drought."
     },
-    {
-        Heading: "Crop Health Monitor",
-        Subheading: "Monitor crop stress",
-        Image: AgriServices3,
-        Description: "The Normalized Difference Vegetation Index (NDVI) and Vegetation Health Index are used to monitor crop health. We provide weekly vegetation health indexes. Utilizing real time plant and soil data and past soil data, we provide advisory on crop health and preventive measures to minimize damage to crops and prevent crop failure."
-    },
+
     {
         Heading: "Crop Acreage",
         Subheading: "Estimate seasonal crop yield",
         Image: AgriServices4,
         Description: "Using high resolution satellite images modeling along with Machine Learning, we classify crops and estimate crop yield for season."
+    },
+    {
+        Heading: "Agriculture Aid",
+        Subheading: "Get agriculture advisory from sowing to harvesting",
+        Image: AgriServices1,
+        Description: "Agriculture aid helps to mitigate the worst impact on crop yield and health during unfavorable events. We analyze the weather, soil moisture, and crop health indices to generate agriculture advisory. Agriculture aid provides highly accurate and real time information on the right time of sowing/harvesting, application of pesticide, and irrigation. The agriculture aid is available local languages via our mobile application."
     },
 
 ]
