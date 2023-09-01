@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import SolarService1 from '../../public/images/our-services/SolarService1.jpg';
-import SolarService2 from '../../public/images/our-services/SolarService2.jpg';
+import SolarService2 from '../../public/images/our-services/SolarService2.gif';
 import SolarService3 from '../../public/images/our-services/SolarService3.jpg';
 import Image from 'next/image';
 import Head from 'next/head';
