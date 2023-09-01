@@ -73,7 +73,7 @@ const SliderBanner = () => {
                             <div className="banner-content">
                                 <h1>A platform for Agricultural Outlook</h1>
                                 <p>AgroCast remotely monitors farms in near real-time, providing valuable data on crop growth, soil moisture, and crop health. Our weekly advisories in regional languages help farmers optimize resources and boost crop yields.</p>
-                               <Link href="/service/agriculture"> <button><span>Discover More</span></button></Link>
+                                <Link href="/service/agriculture"> <button><span>Discover More</span></button></Link>
                             </div>
 
                         </div>
@@ -112,7 +112,7 @@ const SliderBanner = () => {
                             <div className="banner-content">
                                 <h1>Solar-Powered Solutions: Energizing Agriculture</h1>
                                 <p>AgroCast harnesses the power of sunlight to empower agriculture, offering innovative solar solutions for enhanced productivity.</p>
-                                <Link href="/service/solar-power"> <button><span>Discover More</span></button></Link>
+                                <Link href="/"> <button><span>Discover More</span></button></Link>
                             </div>
                         </div>
                     </div>

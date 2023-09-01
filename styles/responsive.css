@@ -182,6 +182,7 @@
     }
 
     #page-header {
+        background-size: auto;
         /* height: 200px; */
     }
     .page-heading h2 {

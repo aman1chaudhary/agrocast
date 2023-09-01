@@ -1103,7 +1103,7 @@ textarea {
 }
 
 .home_carousel_img2 {
-    background: rgba(0, 0, 0, 0.7) url("/images/main-slider/slide2.jpg");
+    background: rgba(0, 0, 0, 0.5) url("/images/main-slider/slide2.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -1112,7 +1112,7 @@ textarea {
 }
 
 .home_carousel_img3 {
-    background: rgba(0, 0, 0, 0.7) url("/images/main-slider/slide3.jpg");
+    background: rgba(0, 0, 0, 0.5) url("/images/main-slider/slide3.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
