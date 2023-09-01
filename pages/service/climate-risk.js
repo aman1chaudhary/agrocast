@@ -1,5 +1,6 @@
 import React from 'react'
-import gifImg from '../../public/images/about/about_main_page.gif';
+import rainfall from '../../public/images/about/rainfall.gif';
+import max_temp from '../../public/images/about/max_temp.gif';
 
 
 import ClimateService1 from '../../public/images/our-services/ClimateService1.jpg';
@@ -31,6 +32,50 @@ const ClimateRiskService = () => {
                         <p><Link href="/">Services</Link> &#187; Climate Risk</p>
                     </div>
                 </header>
+
+
+                <div className='page_section'>
+                    <div className="agrocast_dashboard_container">
+                        <div className="row">
+                            <div className="col-lg-4" >
+                                <div className="page_section_heading">
+                                    <h2 style={{textAlign:"left"}}>Agrocast Dashboard</h2>
+                                </div>
+
+
+                                <ul className="list-checked">
+                                    <li>Crop growth (NDVI), Crop health (EVI) and Soil condition (NDMI).</li>
+                                    <li><span>Water body monitoring.</span></li>
+                                    <li><span>Land use and land cover change mapping.</span></li>
+                                    <li><span>Drought and flood analysis. Crop loss estimation.</span></li>
+                                    <li><span>Crop classification and crop yield estimation.</span></li>
+
+                                </ul>
+                                <div className='generl_btn'>
+                                    <a href='https://agrocastanalytics.com/gcc-dashboard/index.php' className="site-button  btn-icon" target='blank'>Explore Dashboard <i className="fa fa-angle-double-right"></i></a>
+                                </div>
+
+
+
+                            </div>
+
+                            <div className="col-lg-4 " >
+                                <div className="grocast_dashboard_img">
+                                    <Image src={rainfall} alt="" />
+                                </div>
+                            </div>
+                            <div className="col-lg-4 " >
+                                <div className="grocast_dashboard_img">
+                                    <Image src={max_temp} alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                
 
                 <div className="page_section">
 
@@ -67,7 +112,7 @@ const ClimateRiskService = () => {
                         </div>
                     </div>
 
-                    <div className="row services_card_container">
+                    {/* <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
                                 <Image src={ClimateService3} data-tilt alt='Service' />
@@ -82,52 +127,11 @@ const ClimateRiskService = () => {
                                 <p>We provide services to map risk associated due to the changing climate. It helps to identify vulnerable areas, adaptation, mitigation, and resilience strategies to cope up with climate change.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
 
-                <div className='page_section'>
-                    <div className="agrocast_dashboard_container">
-                        <div className="row">
-                            <div className="col-lg-5" >
-                                <div className="page_section_heading">
-                                    <h2 style={{textAlign:"left"}}>Agrocast Dashboard</h2>
-                                </div>
 
-
-                                <ul className="list-checked">
-                                    <li><span>Crop growth (NDVI), Crop health (EVI) and Soil condition (NDMI).</span></li>
-                                    <li><span>Water body monitoring.</span></li>
-                                    <li><span>Land use and land cover change mapping.</span></li>
-                                    <li><span>Drought and flood analysis. Crop loss estimation.</span></li>
-                                    <li><span>Crop classification and crop yield estimation.</span></li>
-
-                                </ul>
-                                <div className='generl_btn'>
-                                    <a href='https://agrocastanalytics.com/gcc-dashboard/index.php' className="site-button  btn-icon" target='blank'>Explore Dashboard <i className="fa fa-angle-double-right"></i></a>
-                                </div>
-
-
-
-                            </div>
-
-
-
-                            <div className="col-lg-7 " >
-                                <div className="grocast_dashboard_img">
-                                    <Image src={gifImg} alt="" />
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-
-
-
-                </div>
             </div>
 
 

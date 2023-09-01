@@ -1,4 +1,44 @@
+@media screen and (min-width: 1600px) {
+    
+    .page_section {
+        padding: 0px 15vw;
+    }
 
+    .short_nav_container {
+        padding: 0px 15vw;
+
+    
+    }
+    .navbar_container {
+        padding: 0px 15vw;
+    }
+    .footer_top {
+        padding: 50px 15vw;
+    
+    }
+
+    .page-heading {
+        margin: 50px 15vw;
+    }
+    .banner-content {
+        margin:200px 15vw;
+    }
+
+    .counter_container {
+        padding: 10px 15vw;
+    }
+
+.home_carousel {
+    height: 75vh;
+
+}
+    
+
+
+
+
+
+}
 
 
 
@@ -81,10 +121,16 @@
 
     .nav__item {
         width: 100%;
-        padding: 15px 0px;
         padding: 10px 0px;
         border-top: 1px solid rgb(223, 223, 223);
         /* border-bottom   : 1px solid rgb(223, 223, 223); */
+
+    }
+
+    .nav__item_btn {
+        width: 100%;
+        border-top: 1px solid rgb(223, 223, 223);
+    
 
     }
 
@@ -136,7 +182,7 @@
     }
 
     #page-header {
-        height: 200px;
+        /* height: 200px; */
     }
     .page-heading h2 {
         color: white;

@@ -71,7 +71,7 @@ const Navbar = () => {
                                     <Link className='dropdown_link' href="/service/agriculture" onClick={handleLinkClick}> Agriculture</Link>
                                     <Link className='dropdown_link' href="/service/water" onClick={handleLinkClick}> Water Resources</Link>
                                     <Link className='dropdown_link' href="/service/climate-risk" onClick={handleLinkClick}> Climate Risk</Link>
-                                    <Link className='dropdown_link' href="/service/solar-power" onClick={handleLinkClick}> Solar Power</Link>
+                                    {/* <Link className='dropdown_link' href="/service/solar-power" onClick={handleLinkClick}> Solar Power</Link> */}
 
                                 </div>
                             </div>

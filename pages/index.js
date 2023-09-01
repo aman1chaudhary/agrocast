@@ -72,7 +72,7 @@ export default function Home() {
                 <ProjectMap />
               </div>
               <div className='col-lg-3 col-md-12'>
-                <div className="page_section_heading" >
+                <div className="page_section_heading our_work" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
                   <p>In our journey at AgroCast, we take immense pride in our past projects, each a testament to our unwavering commitment to agriculture, water, and climate change sectors. Our history is woven with successes in climate-resilient farming initiatives, the implementation of solar-powered agricultural solutions, optimizing water resource management, and providing crop-specific advisory programs. Through these projects, we&apos;ve not only enhanced agricultural practices but also empowered communities with knowledge and tools to thrive in an ever-changing environment.</p>
                 </div>
@@ -103,14 +103,16 @@ export default function Home() {
 
 
 
+          <div>
+            <CounterSection />
+          </div>
+          
 
-
-          <div className="page_section">
+          {/* <div className="page_section">
             <div className="page_section_heading">
               <h2>Download Agrocast Mobile App</h2>
             </div>
             <div className="app-btn-bx text-center">
-              {/* <Link href={"#"} className="site-button radius-xl m-lr5 "><i className="fa fa-apple"></i>IOS</Link> */}
               <Link href={"#"}><button className='round_btn'><i className="fa fa-android"></i>Android </button> </Link>
             </div>
 
@@ -120,7 +122,7 @@ export default function Home() {
                 <Image src={video_thumbnail} alt="" className="img-cover" />
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className='page_section'>
             <div className="page_section_heading">
@@ -141,9 +143,7 @@ export default function Home() {
 
 
 
-          <div>
-            <CounterSection />
-          </div>
+          
 
 
 
