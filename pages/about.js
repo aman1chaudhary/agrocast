@@ -161,8 +161,8 @@ const AboutPage = () => {
 
 
                     {TeamData.map((data, index) => (
-                        <div class="row">
-                            <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" key={index}>
+                        <div class="row"  key={index}>
+                            <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                                 <div class="inner-box">
                                     <div class="image-box">
                                         <figure class="image"><Image src={data.images} alt="" />
