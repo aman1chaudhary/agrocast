@@ -153,52 +153,43 @@ const AboutPage = () => {
                         <h2>Meet Our Team</h2>
                     </div>
 
-                        {TeamData.map((data, index) => (
-                            <div className="row" key={index}>
-                                <div className="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                                    <div className="inner-box">
-                                        <div className="image-box">
-                                            <figure className="image"><Image src={data.images} alt="" />
-                                                <div className="social-links">
-                                                    <ul>
-                                                        <li><a href={data.Email} target='blank'><span className="ti-email"></span></a></li>
-                                                        <li><a href={data.LinkedIn} target='blank'><span className="ti-linkedin"></span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </figure>
-                                        </div>
-                                        {/* <div className="caption-box">
-                                        <h4 className="name"><a href="#">{data.name} </a></h4>
-                                        <span className="designation">{data.role}</span>
-                                    
-                                    </div> */}
+                    {TeamData.map((data, index) => (
+                        <div className="row" key={index}> {/* Add key prop here */}
+                            <div className="speaker-block col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
+                                <div className="inner-box">
+                                    <div className="image-box">
+                                        <figure className="image"><Image src={data.images} alt="" />
+                                            <div className="social-links">
+                                                <ul>
+                                                    <li><a href={data.Email} target='blank'><span className="ti-email"></span></a></li>
+                                                    <li><a href={data.LinkedIn} target='blank'><span className="ti-linkedin"></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
                                     </div>
                                 </div>
-                                <div className='speaker-block col-lg-8 col-md-8 col-sm-12'>
-                                    <div className="caption-box">
-                                        <h4 className="name">{data.name}</h4>
-                                        <p className="designation">{data.role}</p>
-                                        <span className="about">{data.about}</span>
-
-                                    </div>
-
-
-
-                                </div>
-
                             </div>
-                        ))}
-
-
-                    </div>
+                            <div className='speaker-block col-lg-8 col-md-8 col-sm-12'>
+                                <div className="caption-box">
+                                    <h4 className="name">{data.name}</h4>
+                                    <p className="designation">{data.role}</p>
+                                    <span className="about">{data.about}</span>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
 
 
 
                 </div>
 
 
-            </>
-            )
+
+            </div>
+
+
+        </>
+    )
 }
 
-            export default AboutPage
+export default AboutPage
