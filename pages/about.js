@@ -149,53 +149,56 @@ const AboutPage = () => {
 
 
                 <div className="page_section">
+                    <div className="page_section_heading">
+                        <h2>Meet Our Team</h2>
+                    </div>
 
-                    {TeamData.map((data, index) => (
-                        <div class="row" key={index}>
-                            <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><Image src={data.images} alt="" />
-                                            <div class="social-links">
-                                                <ul>
-                                                    <li><a href={data.Email} target='blank'><span class="ti-email"></span></a></li>
-                                                    <li><a href={data.LinkedIn} target='blank'><span class="ti-linkedin"></span></a></li>
-                                                </ul>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    {/* <div class="caption-box">
-                                        <h4 class="name"><a href="#">{data.name} </a></h4>
-                                        <span class="designation">{data.role}</span>
+                        {TeamData.map((data, index) => (
+                            <div className="row" key={index}>
+                                <div className="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div className="inner-box">
+                                        <div className="image-box">
+                                            <figure className="image"><Image src={data.images} alt="" />
+                                                <div className="social-links">
+                                                    <ul>
+                                                        <li><a href={data.Email} target='blank'><span className="ti-email"></span></a></li>
+                                                        <li><a href={data.LinkedIn} target='blank'><span className="ti-linkedin"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        {/* <div className="caption-box">
+                                        <h4 className="name"><a href="#">{data.name} </a></h4>
+                                        <span className="designation">{data.role}</span>
                                     
                                     </div> */}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='speaker-block col-lg-8 col-md-8 col-sm-12'>
-                                <div class="caption-box">
-                                    <h4 class="name">{data.name}</h4>
-                                    <p class="designation">{data.role}</p>
-                                    <span class="about">{data.about}</span>
+                                <div className='speaker-block col-lg-8 col-md-8 col-sm-12'>
+                                    <div className="caption-box">
+                                        <h4 className="name">{data.name}</h4>
+                                        <p className="designation">{data.role}</p>
+                                        <span className="about">{data.about}</span>
+
+                                    </div>
+
+
 
                                 </div>
 
-
-
                             </div>
+                        ))}
 
-                        </div>
-                    ))}
+
+                    </div>
+
 
 
                 </div>
 
 
-
-            </div>
-
-
-        </>
-    )
+            </>
+            )
 }
 
-export default AboutPage
+            export default AboutPage
