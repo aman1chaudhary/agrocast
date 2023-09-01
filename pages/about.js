@@ -1,6 +1,4 @@
 import React from 'react'
-import about2 from '../public/images/about/about-2.jpg';
-
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -110,12 +108,6 @@ const AboutPage = () => {
                             </div>
 
                         </div>
-                        {/* <div className="col-lg-3 col-md-3 col-sm-12">
-                            <div className="about_img">
-                                <Image src={about2} alt="" />
-                            </div>
-                        </div> */}
-
                     </div>
                 </div>
 
@@ -158,10 +150,8 @@ const AboutPage = () => {
 
                 <div className="page_section">
 
-
-
                     {TeamData.map((data, index) => (
-                        <div class="row"  key={index}>
+                        <div class="row" key={index}>
                             <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                                 <div class="inner-box">
                                     <div class="image-box">
