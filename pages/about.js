@@ -123,7 +123,7 @@ const AboutPage = () => {
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className='about_content'>
                                 <p>
-                                    AgroCast Analytics Pvt Ltd is an Indian registered startup that provides consultancy services in Agriculture, Water, and Climate change sectors. Our mission is to build a climate-resilient society by analyzing and eliminating the current and projected risk associated with the agriculture and water sector considering climate change threats. Our solutions have proved an extremely prudent investment since it adds social-economic value and contributes to the country's sustainable growth.
+                                    AgroCast Analytics Pvt Ltd is an Indian registered startup that provides consultancy services in Agriculture, Water, and Climate change sectors. Our mission is to build a climate-resilient society by analyzing and eliminating the current and projected risk associated with the agriculture and water sector considering climate change threats. Our solutions have proved an extremely prudent investment since it adds social-economic value and contributes to the country&apos;s sustainable growth.
                                 </p>
                             </div>
 
