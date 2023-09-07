@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -8,11 +8,13 @@ import pic3 from '../public/images/our-team/pic3.jpg';
 import pic4 from '../public/images/our-team/pic4.jpg';
 import pic5 from '../public/images/our-team/pic5.jpg';
 import pic6 from '../public/images/our-team/pic6.jpg';
+import tree from '../public/images/tree.jpg';
 import Link from 'next/link';
 
 
 const TeamData = [
     {
+        id: "member_1",
         images: pic1,
         name: "Dr. Harsh L. Shah",
         Email: "harsh.shah@agrocastanalytics.com",
@@ -22,6 +24,7 @@ const TeamData = [
         LinkedIn: "https://www.linkedin.com/in/harsh-shah-77595179/",
     },
     {
+        id: "member_2",
         images: pic2,
         name: "Prof. Vimal Mishra",
         Email: "",
@@ -31,6 +34,7 @@ const TeamData = [
         LinkedIn: "https://www.linkedin.com/in/vimal-mishra-21162265/",
     },
     {
+        id: "member_3",
         images: pic3,
         name: "Mrs. Shaily Shah",
         Email: "shaily.shah@agrocastanalytics.com",
@@ -40,6 +44,18 @@ const TeamData = [
         LinkedIn: "https://www.linkedin.com/",
     },
     {
+        id: "member_4",
+        images: pic4,
+        name: "Mr. Meen Patel",
+        Email: "meenpatel9@gmail.com",
+        role: "Jr. Civil Engineer",
+        BackgroundInformation: ["Bachelor in Civil  Engineering",
+            "Meen is native in Gujarati and fluent in Hindi and English"],
+        about: "Mr. Meenkumar Patel is a dynamic Junior Civil Engineer at AgroCast Analytics Pvt. Ltd, with a specialized expertise in the Surveying and GIS sector. Proficient in deploying advanced techniques like DGPS and Drone Surveys, Mr. Patel seamlessly integrates cutting-edge technology with traditional GIS-GPS methodologies to deliver precise and efficient survey outcomes. His foundational internship experiences at GWSSB and hands-on involvement in bridge construction sites during his Bachelor's degree have endowed him with a holistic understanding of the field. His commitment to innovation and continuous learning ensures our projects stand out in quality and precision. A true asset to our team, Meenkumar consistently elevates our standard of work, bringing unmatched expertise and vision to every venture.",
+        LinkedIn: "https://www.linkedin.com/",
+    },
+    {
+        id: "member_5",
         images: pic5,
         name: "Dr. Azaz Pathan",
         Email: "azaz.pathan@agrocastanalytics.com",
@@ -52,17 +68,9 @@ const TeamData = [
         about: "Dr. Azaz Pathan is Senior Hydrologist at AgroCast Analytics Pvt. Ltd. He leads  GIS based flood risk assessment, mappings, and hydrological sectors. Before starting AgroCast, Dr. Azaz worked as a Senior Research Fellow in the Indo-Netherlands Project at Indian Institute of Technology Gandhinagar. He has delivered hands-on training (flood modeling) at different university of India and abroad as an expert. Dr. Azaz has published more than 30 research papers in internationally reviewed journals/conference and also presented work in national/international conferences. Dr. Azaz has an intricate knowledge of various software including HEC-RAS, HEC-HMS, SWAT, Arc-GIS, QGIS, SWMM, WaterGEM, QGIS. His area of interests are flood inundation mapping (1D/2D), Flood Risk mapping using MCDM techniques, Flood control measures, Flood resilience strategies, Water Conservation, Water Harvesting, Dam Break Analysis, Dam Safety management, Water Distribution System, Integrated Water Management, Hydrologic modeling.",
         LinkedIn: "https://www.linkedin.com/in/dr-azazkhan-i-pathan-25398870/",
     },
+
     {
-        images: pic4,
-        name: "Mr. Meen Patel",
-        Email: "meenpatel9@gmail.com",
-        role: "Jr. Civil Engineer",
-        BackgroundInformation: ["Bachelor in Civil  Engineering",
-            "Meen is native in Gujarati and fluent in Hindi and English"],
-        about: "Mr. Meenkumar Patel is a dynamic Junior Civil Engineer at AgroCast Analytics Pvt. Ltd, with a specialized expertise in the Surveying and GIS sector. Proficient in deploying advanced techniques like DGPS and Drone Surveys, Mr. Patel seamlessly integrates cutting-edge technology with traditional GIS-GPS methodologies to deliver precise and efficient survey outcomes. His foundational internship experiences at GWSSB and hands-on involvement in bridge construction sites during his Bachelor's degree have endowed him with a holistic understanding of the field. His commitment to innovation and continuous learning ensures our projects stand out in quality and precision. A true asset to our team, Meenkumar consistently elevates our standard of work, bringing unmatched expertise and vision to every venture.",
-        LinkedIn: "https://www.linkedin.com/",
-    },
-    {
+        id: "member_6",
         images: pic6,
         name: "Mr. Preet Mehta",
         role: "Jr. Civil Engineer",
@@ -75,6 +83,24 @@ const TeamData = [
 ]
 
 const AboutPage = () => {
+    const [selectedMember, setSelectedMember] = useState(null);
+    const memberDetailsRef = useRef(null);
+
+    const handleMemberClick = (id) => {
+        if (selectedMember === id) {
+            setSelectedMember(null); // Deselect the member if already selected
+        } else {
+            setSelectedMember(id);
+            // Scroll to the member's details
+            memberDetailsRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    };
+
+    console.log()
+
     return (
         <>
             <Head>
@@ -97,13 +123,7 @@ const AboutPage = () => {
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className='about_content'>
                                 <p>
-                                    The next step in the agrarian revolution is the digital and technical transformation. We at AgroCast firmly believe in leading this revolution by bringing technology and analytics to all partners in the agrarian value chain.<br />
-
-                                    AgroCast is an agrarian forecasting and analytics firm; offers a wide range of consulting services in agriculture and water sectors. Backed by a team of experts specialising in agroclimatic analytics, machine learning, AI and policy design, we provide scientific solutions to business problems. We believe in bringing the most efficient, effective and affordable knowledge solutions to our partners and have built a practice of the most robust and state of the art analytics tools and applications.<br />
-
-                                    With our structured approach and ability to provide bespoke, contextually relevant solutions in the fields of agriculture and water resources we have partnered with farmers, government agencies, agrarian industries, and crop insurance companies. AgroCast Analytics Pvt Ltd is an Indian registered startup incubated at Indian Institute Technology Gandhinagar incubation Centre. AgroCast analytics is a joint venture of members from the Indian Institute of Technology Gandhinagar and Indian Institute of Management Ahmedabad. Team AgroCast has extensive experience in the field of agriculture, water resources management, climate change analysis, and policymaking.<br />
-
-                                    Our vision is to build a climate-resilient society by analyzing and eliminating the risk associated in agriculture and water sectors under climate change.
+                                    AgroCast Analytics Pvt Ltd is an Indian registered startup that provides consultancy services in Agriculture, Water, and Climate change sectors. Our mission is to build a climate-resilient society by analyzing and eliminating the current and projected risk associated with the agriculture and water sector considering climate change threats. Our solutions have proved an extremely prudent investment since it adds social-economic value and contributes to the country's sustainable growth.
                                 </p>
                             </div>
 
@@ -111,8 +131,58 @@ const AboutPage = () => {
                     </div>
                 </div>
 
+                <div className="page_section">
+                    <div className="page_section_heading">
+                        <h2>Meet Our Team</h2>
+                    </div>
 
 
+
+                    <div className="tree_container">
+                        {TeamData.map((data) => (
+                            <div
+                                className={`tree_item ${data.id} ${selectedMember === data.id ? 'selected' : ''
+                                    }`}
+                                key={data.id}
+                                onClick={() => handleMemberClick(data.id)}
+                            >
+                                <Image src={data.images} />
+                                <div className="tree_item_content">
+                                    <h4>{data.name}</h4>
+                                    <p>{data.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div ref={memberDetailsRef}>
+                        {selectedMember && (
+                            <div className="row member_details" >
+                                <div className="col-lg-4 col-md-4 col-sm-12">
+                                    <div className="member_image">
+                                        <Image src={TeamData.find((member) => member.id === selectedMember).images} alt="" />
+
+                                    </div>
+                                </div>
+                                <div className='col-lg-8 col-md-8 col-sm-12'>
+                                    <div className="member_content">
+                                        <h4 className="name">{TeamData.find((member) => member.id === selectedMember).name}</h4>
+                                        <p className="designation">{TeamData.find((member) => member.id === selectedMember).role}</p>
+                                        <span className="about">{TeamData.find((member) => member.id === selectedMember).about}</span>
+                                        <div className="footer_social_icons">
+                                            <a href={TeamData.find((member) => member.id === selectedMember).LinkedIn} target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
+                                            <a href={TeamData.find((member) => member.id === selectedMember).Email} className="social_icons twitter"><i className="fa fa-envelope"></i></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+
+
+                </div>
                 {/* <div className="page_section">
                     <div className="page_section_heading">
                         <h2>Meet Our Team</h2>
@@ -148,13 +218,13 @@ const AboutPage = () => {
 
 
 
-                <div className="page_section">
+                {/* <div className="page_section">
                     <div className="page_section_heading">
                         <h2>Meet Our Team</h2>
                     </div>
 
                     {TeamData.map((data, index) => (
-                        <div className="row" key={index}> {/* Add key prop here */}
+                        <div className="row" key={index}> 
                             <div className="speaker-block col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
                                 <div className="inner-box">
                                     <div className="image-box">
@@ -179,9 +249,7 @@ const AboutPage = () => {
                         </div>
                     ))}
 
-
-
-                </div>
+                </div> */}
 
 
 

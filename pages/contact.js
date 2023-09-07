@@ -4,10 +4,9 @@ import axios from 'axios';
 import Link from 'next/link';
 
 const ContactPage = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', subject: 'Agrocast Website New Message', phone: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', email: '', subject: '', phone: '', message: '' });
     const [isLoading, setIsLoading] = useState(false);
     const [message, setMessage] = useState("")
-
 
     useEffect(() => {
         const messageTimer = setTimeout(() => {
@@ -18,7 +17,6 @@ const ContactPage = () => {
             clearTimeout(messageTimer);
         };
     }, [message]);
-
 
     const handleChange = ({ target }) =>
         setFormData((prev) => ({
@@ -32,7 +30,6 @@ const ContactPage = () => {
             setMessage('Please fill in all fields before submitting.');
             return;
         }
-
         setIsLoading(true);
 
         try {
@@ -45,7 +42,7 @@ const ContactPage = () => {
             }
 
             setIsLoading(false);
-            setFormData({ name: '', email: '', subject: 'Portfolio Website Contact Form', phone: '', message: '' });
+            setFormData({ name: '', email: '', subject: '', phone: '', message: '' });
             setMessage('Message Sent Successfully');
         } catch (error) {
             setIsLoading(false);
@@ -74,9 +71,9 @@ const ContactPage = () => {
                 </header>
 
                 <div className="page_section">
-                <div className="page_section_heading">
-              <h2>Let&apos;s Connect</h2>
-            </div>
+                    <div className="page_section_heading">
+                        <h2>Let&apos;s Connect</h2>
+                    </div>
 
                     <div className="contact_form_container">
 
@@ -104,14 +101,13 @@ const ContactPage = () => {
                                             <input
                                                 name="phone"
                                                 type="text" required
-
                                                 placeholder="Phone"
                                                 value={formData.phone}
                                                 onChange={handleChange} />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-12">
+                                <div className="col-lg-6">
                                     <div className="form_group">
                                         <div className="input_group">
                                             <div className="input_group_addon"><i className="ti-email"></i></div>
@@ -122,6 +118,27 @@ const ContactPage = () => {
                                                 placeholder="Your Email Id"
                                                 value={formData.email}
                                                 onChange={handleChange} />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="form_group">
+                                        <div className="input_group">
+                                            <div className="input_group_addon"><i className="ti-pencil-alt"></i></div>
+                                            <select
+                                                name="subject"
+                                                onChange={handleChange}
+                                                value={formData.subject}
+                                                required
+                                            >
+                                                <option value="">Subject</option>
+                                                <option value="Business">Business</option>
+                                                <option value="Partnership">Partnership</option>
+                                                <option value="Job">Job</option>
+                                                <option value="Internship">Internship</option>
+                                            </select>
+
                                         </div>
                                     </div>
                                 </div>
@@ -143,16 +160,16 @@ const ContactPage = () => {
                                 <div className="col-lg-12">
 
                                     <div className='card_btn contact_btn'>
-                                    <button
-                                        onClick={onSubmit}
-                                        // className="site_button"
-                                        disabled={isLoading}
-                                        style={{ opacity: isLoading ? 0.5 : 1, pointerEvents: isLoading ? 'none' : 'auto' }}
-                                    >
-                                        <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
-                                    </button>
+                                        <button
+                                            onClick={onSubmit}
+                                            // className="site_button"
+                                            disabled={isLoading}
+                                            style={{ opacity: isLoading ? 0.5 : 1, pointerEvents: isLoading ? 'none' : 'auto' }}
+                                        >
+                                            <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
+                                        </button>
                                     </div>
-                                    
+
                                     <p>{message}</p>
                                 </div>
                             </div>
@@ -183,7 +200,7 @@ const ContactPage = () => {
                             </div>
                             <div className='contact_card_item'>
                                 <div className='contact_card_item_icon'>
-                                    <i class="ti-alarm-clock"></i>
+                                    <i className="ti-alarm-clock"></i>
                                 </div>
                                 <div className='contact_card_item_content'>
                                     <h5>Office Hours</h5>
@@ -199,7 +216,7 @@ const ContactPage = () => {
                         <div className="contact_page_card">
                             <div className='contact_card_item'>
                                 <div className='contact_card_item_icon'>
-                                    <i class="ti-email"></i>
+                                    <i className="ti-email"></i>
                                 </div>
                                 <div className='contact_card_item_content'>
                                     <h5> E-mail</h5>
@@ -209,7 +226,7 @@ const ContactPage = () => {
                             </div>
                             <div className='contact_card_item'>
                                 <div className='contact_card_item_icon'>
-                                <i class="ti-mobile"></i>
+                                    <i className="ti-mobile"></i>
                                 </div>
                                 <div className='contact_card_item_content'>
                                     <h5> Phone Numbers</h5>

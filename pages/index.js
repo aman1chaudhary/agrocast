@@ -11,7 +11,16 @@ import dynamic from 'next/dynamic'
 import ourMissionImg from '../public/images/about/our-mission.jpg';
 import CounterSection from '../components/CounterSection'
 import { useRef } from 'react'
-
+import work1 from "../public/images/about/work-1.jpg"
+import work2 from "../public/images/about/work-2.jpg"
+import work3 from "../public/images/about/work-3.jpg"
+import work4 from "../public/images/about/work-4.jpg"
+import work5 from "../public/images/about/work-5.jpg"
+import work6 from "../public/images/about/work-6.jpg"
+import work7 from "../public/images/about/work-7.jpg"
+import work8 from "../public/images/about/work-8.jpg"
+import work9 from "../public/images/about/work-9.jpg"
+import AchievementsCarousel from '../components/AchievementsCarousel'
 
 const ProjectMap = dynamic(() => import('../components/ProjectMap'), {
   ssr: false,
@@ -43,7 +52,7 @@ export default function Home() {
                     <div className="page_section_heading">
                       <h2>Our Mission</h2>
                     </div>
-                    <p>To build a climate-resilient society by analyzing and eliminating the current and projected risk associated in agriculture and water sector considering climate change threat. Our solutions have proved an extremely prudent investment since it adds the social-economic- environmental value and contributes in sustainable growth of country.</p>
+                    <p>To build a climate-resilient society by analyzing and eliminating the current and projected risk associated in agriculture and water sector considering climate change threat. Our solutions have proved an extremely prudent investment since it adds the social-economic-environmental value and contributes in sustainable growth of country.</p>
                   </div>
 
                 </div>
@@ -64,7 +73,7 @@ export default function Home() {
 
 
           <div className='page_section'>
-          <div className="page_section_heading">
+            <div className="page_section_heading">
               {/* <h2>A Glance of Our Work</h2> */}
             </div>
             <div className='row'>
@@ -74,7 +83,43 @@ export default function Home() {
               <div className='col-lg-3 col-md-12'>
                 <div className="page_section_heading our_work" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
-                  <p>In our journey at AgroCast, we take immense pride in our past projects, each a testament to our unwavering commitment to agriculture, water, and climate change sectors. Our history is woven with successes in climate-resilient farming initiatives, the implementation of solar-powered agricultural solutions, optimizing water resource management, and providing crop-specific advisory programs. Through these projects, we&apos;ve not only enhanced agricultural practices but also empowered communities with knowledge and tools to thrive in an ever-changing environment.</p>
+                  <p>We take immense pride in our past projects, each a testament our unwavering commitment to Agriculture, Water and Climate Change sectors. We have carried out projects for solar parks, metro and museum.</p>
+                </div>
+
+                <div className='work_glance_container'>
+                  <div className='row work_glance_item'>
+                    <div className='col-md-4'>
+                      <Image src={work1} />
+                    </div>
+                    <div className='col-md-4'>
+                      <Image src={work6} />
+                    </div>
+                    <div className='col-md-4'>
+                      <Image src={work9} />
+                    </div>
+                  </div>
+                  <div className='row work_glance_item'>
+                    <div className='col-md-4'>
+                      <Image src={work4} />
+                    </div>
+                    <div className='col-md-4'>
+                      <Image src={work3} />
+                    </div>
+                    <div className='col-md-4'>
+                      <Image src={work2} />
+                    </div>
+                  </div>
+                  <div className='row work_glance_item'>
+                    <div className='col-md-4'>
+                      <Image src={work5} />
+                    </div>
+                    <div className='col-md-4'>
+                      <Image src={work8} />
+                    </div>
+                    <div className='col-md-4'>
+                      <Image src={work7} />
+                    </div>
+                  </div>
                 </div>
 
                 {/* <Link
@@ -106,7 +151,9 @@ export default function Home() {
           <div>
             <CounterSection />
           </div>
-          
+
+
+
 
           {/* <div className="page_section">
             <div className="page_section_heading">
@@ -133,6 +180,15 @@ export default function Home() {
           </div>
 
 
+          <div className='page_section'>
+            <div className="page_section_heading">
+              <h2>Our Achievements</h2>
+            </div>
+            <AchievementsCarousel />
+
+          </div>
+
+
 
           {/* <div className='page_section' ref={pastProjectsRef}>
             <div className="page_section_heading">
@@ -143,7 +199,7 @@ export default function Home() {
 
 
 
-          
+
 
 
 

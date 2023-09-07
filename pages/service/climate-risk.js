@@ -37,18 +37,19 @@ const ClimateRiskService = () => {
                 <div className='page_section'>
                     <div className="agrocast_dashboard_container">
                         <div className="row">
-                            <div className="col-lg-4" >
+                            <div className="col-lg-6" >
                                 <div className="page_section_heading">
-                                    <h2 style={{textAlign:"left"}}>Agrocast Dashboard</h2>
+                                    <h2 style={{ textAlign: "left" }}>Monitoring Climatic Variables through Dashboard</h2>
                                 </div>
 
 
                                 <ul className="list-checked">
-                                    <li>Crop growth (NDVI), Crop health (EVI) and Soil condition (NDMI).</li>
-                                    <li><span>Water body monitoring.</span></li>
-                                    <li><span>Land use and land cover change mapping.</span></li>
-                                    <li><span>Drought and flood analysis. Crop loss estimation.</span></li>
-                                    <li><span>Crop classification and crop yield estimation.</span></li>
+
+                                    <li>Taluka and District level analysis of daily rainfall, maximum temperature, and minimum temperature. </li>
+                                    <li>The last 7 days, previous 6 months, and 3 years climatic variables can be analyzed through the platform.</li>
+                                    <li>Heatmaps for daily climatic variables.</li>
+                                    <li>Trend analysis of climatic variables.</li>
+                                    <li>Data source: Indian Meteorological Department</li>
 
                                 </ul>
                                 <div className='generl_btn'>
@@ -59,12 +60,12 @@ const ClimateRiskService = () => {
 
                             </div>
 
-                            <div className="col-lg-4 " >
+                            <div className="col-lg-3" >
                                 <div className="grocast_dashboard_img">
                                     <Image src={rainfall} alt="" />
                                 </div>
                             </div>
-                            <div className="col-lg-4 " >
+                            <div className="col-lg-3" >
                                 <div className="grocast_dashboard_img">
                                     <Image src={max_temp} alt="" />
                                 </div>
@@ -75,9 +76,10 @@ const ClimateRiskService = () => {
 
 
                 </div>
-                
+
 
                 <div className="page_section">
+
 
                     <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
@@ -86,31 +88,44 @@ const ClimateRiskService = () => {
                             </div>
 
                         </div>
-                        <div className="col-lg-6 col-md-6">
-                            <div className="services_card_content">
-                                <h3>Extreme Weather Warning</h3>
-                                <p>Receive bad weather alerts</p>
-                                <p>Alert before extreme weather events help to prepare during the event. We transmit alerts well in advance of extreme precipitation and heatwaves. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row services_card_container">
-                        <div className="col-lg-6 col-md-12 m-b30  ">
-                            <div className='services_card_img'>
-                                <Image src={ClimateService2} data-tilt alt='Service' />
-                            </div>
-
-                        </div>
 
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
                                 <h3>Climate Change Assessment</h3>
-                                <p>Understand climate variability</p>
-                                <p>Anthropogenic activities have increased earth temperature by 1.5 ºC over the last century, and the temperature is projected to increase by 1.5-2 ºC by the end of the 21st century. The temperature rise as a signal of climate change puts tremendous pressure on the agriculture and industry sectors. It is essential to know the past as well as the projected climate to build climate resilience society. We provide high-resolution climate change assessment report. </p>
+                                {/* <p>Understand climate variability</p> */}
+                                <ul>
+
+                                    <li>Anthropogenic activities have increased earth temperature by 1.5 °C over the last century, and the temperature is projected to increase by 1.5-2 °C by the end of the 21st century. The temperature rise as a signal of climate change puts tremendous pressure on the agriculture and industry sectors. It is essential to know the past as well as the projected climate to build climate resilience society.</li>
+                                    <li>Assessment of climatic variables using climate models projection under different scenarios at local to national level. </li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
+
+
+                    <div className="row services_card_container">
+                        <div className="col-lg-6 col-md-12 m-b30  ">
+                            <div className='services_card_img'>
+                                <Image src={ClimateService3} data-tilt alt='Service' />
+                            </div>
+
+                        </div>
+                        <div className="col-lg-6 col-md-6">
+                            <div className="services_card_content">
+                                <h3>Climate Change Impact Assessment</h3>
+                                {/* <p>Receive bad weather alerts</p> */}
+                                <ul>
+                                    <li>Evaluate climate change impact on Agriculture and Water sectors. </li>
+                                    <li>Develop climate resilient framework by mapping possible risk and vulnerability associated among different sectors. </li>
+
+                                </ul>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+
 
                     {/* <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">

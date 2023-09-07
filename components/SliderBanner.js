@@ -72,7 +72,7 @@ const SliderBanner = () => {
                         <div className='col-md-7'>
                             <div className="banner-content">
                                 <h1>A platform for Agricultural Outlook</h1>
-                                <p>AgroCast remotely monitors farms in near real-time, providing valuable data on crop growth, soil moisture, and crop health. Our weekly advisories in regional languages help farmers optimize resources and boost crop yields.</p>
+                                <p>AgroCast monitors farms remotely in near real-time and provide insights into crop growth, soil moisture, and crop health condition along with geography-season-crop specific weekly advisory in vernacular languages and it helps farmers to optimize the use of farm resources and increase crop yield.</p>
                                 <Link href="/service/agriculture"> <button><span>Discover More</span></button></Link>
                             </div>
 
@@ -87,7 +87,7 @@ const SliderBanner = () => {
                         <div className='col-md-7'>
                             <div className="banner-content">
                                 <h1>From Water Measurement to Resource Management</h1>
-                                <p>AgroCast offers comprehensive services, including topography surveys, hydrology assessments, drainage design, and groundwater investigations for effective water resource management.</p>
+                                <p>AgroCast offers topography survey, hydrology-hydraulics modeling, flood risk assessment, drainage design and groundwater investigation.</p>
                                 <Link href="/service/water"> <button><span>Discover More</span></button></Link>
                             </div>
                         </div>
@@ -99,14 +99,14 @@ const SliderBanner = () => {
                         <div className='col-md-7'>
                             <div className="banner-content">
                                 <h1>Meet the challenges of a changing climate.</h1>
-                                <p>AgroCast evaluates climatic variables using advanced models, projecting scenarios at local and national levels to help you tackle climate challenges.</p>
+                                <p>AgroCast assess climatic variables using climate models projection under different scenarios at local to national level.</p>
                                 <Link href="/service/climate-risk"> <button><span>Discover More</span></button></Link>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='home_carousel home_carousel_img4'>
+                {/* <div className='home_carousel home_carousel_img4'>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
@@ -116,7 +116,7 @@ const SliderBanner = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
             </Slider>

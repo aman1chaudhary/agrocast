@@ -9,6 +9,7 @@ import agrocast_app from "../../public/images/about/agrocast_app.jpg"
 import Head from 'next/head';
 import VideoPopup from '../../components/VideoPopup';
 import Link from 'next/link';
+import { SlideComparision } from '../../components/SlideComparision';
 
 const AgricultureService = () => {
 
@@ -22,7 +23,7 @@ const AgricultureService = () => {
 
             <div className="page_container">
 
-                
+
                 <header id="page-header">
                     <div className="page-heading">
                         <h2>Agriculture</h2>
@@ -34,6 +35,9 @@ const AgricultureService = () => {
                 <div className="page_section">
                     <div className="page_section_heading">
                         <h2>Agrocast Mobile App </h2>
+                    </div>
+                    <div className="app-btn-bx text-center">
+                        <Link href={"#"}><button className='round_btn'><i className="fa fa-android"></i>Android </button> </Link>
                     </div>
                     <div className="row">
                         <div className="faq_video">
@@ -48,15 +52,15 @@ const AgricultureService = () => {
                 </div>
 
 
-                <div className='agrocast_app_feature_container'>
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-xs-12 p-a0">
-                            <div className='agrocast_app_feature_img'>
-                                <Image src={agrocast_app} alt="agrocast_app_feature" />
-                            </div>
+                <div className='feature_container'>
+                    <div className="feature_container_item">
+                        <div className='feature_img'>
+                            <Image src={agrocast_app} alt="App feature" />
                         </div>
-                        <div className="col-lg-6 col-md-6 col-xs-12">
-                            <div className="agrocast_app_feature_content">
+                    </div>
+                    <div className="feature_container_item">
+                        <div className='feature_content_box'>
+                            <div className="feature_content">
                                 <h2>Agrocast App Features</h2>
                                 <ul className="list-checked primary">
                                     <li><span>Satellite Based Indices </span></li>
@@ -75,7 +79,7 @@ const AgricultureService = () => {
 
                 <div className="page_section">
 
-                    <div className="row services_card_container">
+                    {/* <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
                                 <Image src={AgriServices1} data-tilt alt='Service' />
@@ -89,7 +93,9 @@ const AgricultureService = () => {
                                 <p>Agriculture aid helps to mitigate the worst impact on crop yield and health during unfavorable events. We analyze the weather, soil moisture, and crop health indices to generate agriculture advisory. Agriculture aid provides highly accurate and real time information on the right time of sowing/harvesting, application of pesticide, and irrigation. The agriculture aid is available local languages via our mobile application. </p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+
 
                     <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
@@ -100,9 +106,9 @@ const AgricultureService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3>Crop Health Monitor</h3>
-                                <p>Monitor crop stress</p>
-                                <p>The Normalized Difference Vegetation Index (NDVI) and Vegetation Health Index are used to monitor crop health. We provide weekly vegetation health indexes. Utilizing real time plant and soil data and past soil data, we provide advisory on crop health and preventive measures to minimize damage to crops and prevent crop failure. </p>
+                                <h3>Drought Monitor</h3>
+                                {/* <p>Monitor drought propagation with time</p> */}
+                                <p>Drought is the costliest natural disaster. Monitoring drought ahead of time helps reduce the unpleasant impact on water and agriculture sectors. We monitor meteorological and hydrological drought at fine resolution. The drought monitoring system provides information on drought severity and area extent well in advance giving the partners time to mitigate and counter the impact of drought.</p>
                             </div>
                         </div>
                     </div>
@@ -116,14 +122,14 @@ const AgricultureService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3>Drought Monitor</h3>
-                                <p>Monitor drought propagation with time</p>
-                                <p>Drought is the costliest natural disaster. Monitoring drought ahead of time helps reduce the unpleasant impact on water and agriculture sectors. We monitor meteorological and hydrological drought at fine resolution. The drought monitoring system provides information on drought severity and area extent well in advance giving the partners time to mitigate and counter the impact of drought. </p>
+                                <h3>Crop Acreage</h3>
+                                {/* <p>Monitor crop stress</p> */}
+                                <p>Using high resolution satellite images modeling along with Machine Learning, we classify crops and estimate crop yield for season.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="row services_card_container">
+                    {/* <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
                                 <Image src={AgriServices4} data-tilt alt='Service' />
@@ -137,7 +143,7 @@ const AgricultureService = () => {
                                 <p>Using high resolution satellite images modeling along with Machine Learning, we classify crops and estimate crop yield for season. </p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
 
@@ -146,12 +152,40 @@ const AgricultureService = () => {
 
 
 
-                
+
+                <div className='feature_container'>
+                    <div className="feature_container_item">
+                        <div className='feature_img'>
+                            <SlideComparision />
+                        </div>
+                    </div>
+                    <div className="feature_container_item">
+                        <div className='feature_content_box'>
+                            <div className="feature_content">
+                                <h2>Tree Counting using AI/ML</h2>
+                                <ul className="list-checked">
+                                    <li><span>Our ML models now capable to accurately identify trees from UAV images </span></li>
+                                    <li><span> We calculate the number of trees within the area covered by drone flight. </span></li>
+                                    <li><span>In addition, we provide geo tagging to each detected tree.  </span></li>
+                                    <li><span>The developed system is capable of generating comprehensive report on the number of tree for record and aftermath analysis.</span></li>
+                                    <li><span>Our system is useful, particularly,  for the tree counting and geotagging in wide range of areas including roadways, urban localities and plain grounds. </span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
 
 
 
-                
+
+
+
+
+
+
 
 
 

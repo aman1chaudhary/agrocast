@@ -64,7 +64,7 @@ const handler = async (req, res) => {
       await transporter.sendMail({
         ...mailOptions,
         ...generateEmailContent(data),
-        subject: data.subject,
+        subject: "Agrocast Website New Message",
       });
 
       return res.json({ success: true });

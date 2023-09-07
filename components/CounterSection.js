@@ -3,9 +3,9 @@ import CountUp from 'react-countup';
 
 export const counterSection = [
     { icon: <i className="icon ti-bag" />, num: '4', title: 'Years in Business', },
-    { icon: <i className="icon ti-user" />, num: '50', title: 'Happy Clients', },
-    { icon: <i className="icon flaticon-users" />, num: '10', title: 'Technical Experts', },
-    { icon: <i className="icon ti-mobile" />, num: '1000', title: 'Apps Delivered', },
+    { icon: <i className="icon ti-user" />, num: '12', title: 'Happy Clients', },
+    { icon: <i className="icon flaticon-users" />, num: '5', title: 'Technical Experts', },
+    { icon: <i className="icon ti-mobile" />, num: '20', title: 'Number of Projects', },
 ];
 
 const CounterSection = () => {

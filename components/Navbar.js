@@ -18,13 +18,13 @@ const Navbar = () => {
         <div className='main_nav_container'>
             <div className="short_nav_container">
                 <div className="short_nav_item">
-                        <p><i class="flaticon-phone-call"></i> +91 7600756598</p>
-                        <p><i class="ti-location-pin"></i> Research Park, IIT Gandhinagar, Gujarat, 382355</p>
+                        <p><i className="flaticon-phone-call"></i> +91 7600756598</p>
+                        <p><i className="ti-location-pin"></i> Research Park, IIT Gandhinagar, Gujarat, 382355</p>
 
                 </div>
                 <div className="short_nav_item">
                         {/* <p><i className="fa fa-brands fa-skype"></i> Agency.software</p> */}
-                        <p><i class="ti-email"></i>support@agrocastanalytics.com</p>
+                        <p><i className="ti-email"></i>support@agrocastanalytics.com</p>
                 </div>
 
 

@@ -12,7 +12,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 
-
 const WaterService = () => {
     return (
         <>
@@ -45,16 +44,17 @@ const WaterService = () => {
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 {/* <p>A comprehensive report on watershed management is offered by incorporating current data on aspects such as land use, land cover, soil, elevation, and climatic variables. Physics-based hydrological modeling has been used to simulate the water budget and stream flow. Leveraging our expertise, stakeholders, including solar park owners, insurance companies, state water departments, and dam authorities, can make well-informed decisions regarding resource allocation and development within the study area.</p> */}
                                 <ul>
-                                <li>Develop high resolution DEM, DSM, 3D model and Point cloud of study area.
+                                
+
+
+                                <li>Develop high resolution DEM, DSM, 3D model and Point cloud of study area using UAV.
                                     </li>
-                                    <li>Analyze ground features.</li>
-                                    <li> Monitoring mega project activities.</li>
-                                    <li>Watershed delineation.</li>
-                                    <li> Simulate water budget components (Runoff, Baseflow, Soil Moisture and Evapotranspiration).</li>
-                                    <li>Analysis of flood/drought events.</li>
-                                    <li>Prepare flood inundation maps (water depth and water level).</li>
+                                    <li>Watershed delineation. </li>
+                                    <li> Simulate water budget components (Runoff, Baseflow, Soil Moisture and Evapotranspiration). </li>
+                                    <li>Analysis of flood events.</li>
+                                    <li> Prepare flood inundation maps (water depth and water level). </li>
                                     <li>Design drainage system to prevent water logging.</li>
-                                    <li>Dam break analysis.</li>
+                                   
                                 </ul>
                                 
                                 
@@ -79,18 +79,12 @@ const WaterService = () => {
                                 {/* <p>
                                     We specialized in comprehensive dam breach modeling and analysis, leveraging our expertise in feasibility-level planning and advanced forecasting techniques. Our suite of services encompasses:<br /></p> */}
                                 <ul>
-                                    <li>
-                                        Dam Breach Modeling & Inundation Mapping: Delivering insights through various Annual Return Interval (ARI) maps.
-                                    </li>
-                                    <li>
-                                        Probable Maximum Flood (PMF) Studies: Analyzing the worst-case scenarios to provide robust flood estimates.
-                                    </li>
-                                    <li>
-                                        Hazard Classification Studies: Evaluating the potential risks associated with dam infrastructure and operations.
-                                    </li>
-                                    <li>
-                                        Emergency Action Plan (EAP) Development: Formulating actionable plans to ensure prompt responses during emergency scenarios, safeguarding communities and resources.
-                                    </li>
+
+                                <li>Dam Breach Modeling & Inundation Mapping: Delivering insights through various Annual Return Interval (ARI) maps.</li>
+                                <li>Probable Maximum Flood (PMF) Studies: Analyzing the worst-case scenarios to provide robust flood estimates.</li>
+                                <li>Hazard Classification Studies: Evaluating the potential risks associated with dam infrastructure and operations.</li>
+                                <li>Emergency Action Plan (EAP) Development: Formulating actionable plans to ensure prompt responses during emergency scenarios, safeguarding communities and resources.</li>
+
                                 </ul>
 
 
@@ -111,7 +105,7 @@ const WaterService = () => {
                             <div className="services_card_content">
                                 <h3>Scouring and Sedimentation analysis for Hydraulic Infrastructure Resilience</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
-                                <p>We provide detailed insights into the erosion (scouring) and deposition (sedimentation) dynamics surrounding hydraulic structures by utilizing advanced software simulations for various scenarios. Our efforts are geared towards ensuring the durability, safety, and efficient operation of hydraulic structures, addressing the challenges posed by scouring and sedimentation comprehensively.</p>
+                                <p>Quantitative Sediment Profiles: comprehensive insights into sediment transport rates, erosion-deposition patterns, and temporal sediment behaviors, presented in graphical and tabulated format.</p>
                             </div>
                         </div>
                     </div>
@@ -126,9 +120,16 @@ const WaterService = () => {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="services_card_content">
-                                <h3>Comprehensive Ground Water Assessment</h3>
+                                <h3>Ground Water Investigation</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
-                                <p>We provide expert groundwater study and assessment using state-of-the-art tool and model. Our services encompassed detailed groundwater mapping, reliable estimations of aquifer recharge rates, identification of ground water zones and devising sustainable groundwater management plans by designing artificial recharge structures to safeguard community water resources.</p>
+                                <p>Groundwater mapping using electric resistivity survey</p>
+                                <ul>
+                                    <li>To identify aquifer zone</li>
+                                    <li>To estimate aquifer recharge rate</li>
+                                    <li>To design bore well and artificial recharge structure.</li>
+
+                                </ul>
+                                
                             </div>
                         </div>
 

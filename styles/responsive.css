@@ -257,6 +257,41 @@
     font-size: 14px;
 
 }
+
+.feature_container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.feature_container_item{
+    width: 100%;
+    display: flex;
+}
+.tree_container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0) url("/images/tree.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.tree_item img {
+    width: 60px;
+    height: 60px;
+   
+}
+.tree_item_content{
+
+    display: none;
+}
+
+
     
 
 
