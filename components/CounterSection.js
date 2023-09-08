@@ -13,7 +13,7 @@ const CounterSection = () => {
         <div className='counter_container'>
             <div className="row">
                 {counterSection.map((data, index) => (
-                    <div className="col-lg-3 col-md-6 col-sm-6 col-12" key={index}>
+                    <div className="col-lg-3 col-md-6 col-sm-6 col-6" key={index}>
                         <div className="counter_style">
                             <div className="counter_icon">{data.icon}<span className="counter"><CountUp end={data.num} duration={4} />+</span></div>
                             <span className="counter_text">{data.title}</span>

@@ -25,7 +25,7 @@
     }
 
     .counter_container {
-        padding: 10px 15vw;
+        padding: 30px 15vw;
     }
 
 .home_carousel {
@@ -50,6 +50,13 @@
         margin-top: 80px;
         padding: 0px 20px;
         margin-bottom: 40px;
+        }
+        .round_btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            margin-bottom: 15px;
+        
         }
 
 
@@ -157,6 +164,12 @@
     .extra-cell{
         width: 100%;
         margin-top: 20px;
+    }
+    .banner-content {
+        align-items: left;
+        text-align: left;
+        justify-content: center;
+        margin: 10vh 20px;
     }
     .banner-content h1 {
         color: #f1f1f1;
@@ -289,6 +302,14 @@
 .tree_item_content{
 
     display: none;
+}
+.achievement_content p{
+    font-size: 14px;
+}
+.services_card_container {
+    margin-bottom: 50px;
+    padding: 10px;
+
 }
 
 

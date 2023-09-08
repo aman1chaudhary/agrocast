@@ -88,35 +88,35 @@ export default function Home() {
 
                 <div className='work_glance_container'>
                   <div className='row work_glance_item'>
-                    <div className='col-md-4'>
+                    <div className='col-4 '>
                       <Image src={work1} />
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work6} />
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work9} />
                     </div>
                   </div>
                   <div className='row work_glance_item'>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work4} />
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work3} />
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work2} />
                     </div>
                   </div>
                   <div className='row work_glance_item'>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work5} />
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work8} />
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <Image src={work7} />
                     </div>
                   </div>
