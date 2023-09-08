@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const imgblog = [
 	{
-		image: img1,
+		image: img3,
 		description: "Selected as Top 9 Agri-Tech Startup",
 		Link:"https://msl.mahindra.com/"
 	},
@@ -23,7 +23,7 @@ const imgblog = [
 		Link:"http://ihubgujarat.in/srujan"
 	},
 	{
-		image: img3,
+		image: img1,
 		description: "Part of AAU Cohort 5",
 		Link:"https://www.aauincubator.in/"
 	},
