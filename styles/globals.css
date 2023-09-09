@@ -253,6 +253,53 @@ a {
 }
 
 
+.slick-dots{
+        position: absolute;
+    bottom: 25px !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+}
+ .slick-dots li button::before{
+	content:none!important;
+}
+ .slick-dots li{
+	border: 1px solid rgba(255, 255, 255, 1);
+	border-radius: 20px;
+    display: inline-block;
+    margin: 4px;
+    padding: 4px;
+}
+ .slick-dots li.slick-active{
+	border-color: #6cc000;
+}
+ .slick-dots li.slick-active button{
+	background-color: #6cc000;
+}
+.slick-dots li button{
+	height: 9px;
+    width: 9px;
+    margin: 0;
+	background: #d6d6d6;
+	display: block;
+	border-radius: 30px;
+	-webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+
+
+
 
 
 
@@ -1142,9 +1189,11 @@ textarea {
 
 
 .home_carousel {
-    width: 100px;
-    height: 85vh;
+    width: 100vw;
+    height: 80vh;
+    max-height: 1100px;
     padding: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1193,6 +1242,7 @@ textarea {
     text-align: left;
     justify-content: center;
     margin: 20vh 10vw;
+    max-width: 700px;
 }
 
 .banner-content h1 {
@@ -1263,9 +1313,11 @@ textarea {
 
 
 .home_carousel_arrow {
-    color: white;
+    display: none;
+    
+    /* color: white;
     font-size: 36px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
 
 }
 
@@ -1375,12 +1427,25 @@ textarea {
 
 
 
-
+.member_details_container{
+    padding: 0px 10vw;
+    position:fixed;
+    top: 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    transition: 0.4s;
+}
 
 .member_details{
-    margin-top: 20px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    max-width: 1100px;
+    box-shadow: 0 0 10px 0 rgba(243, 243, 243, 0.2);
+    padding: 20px;
+    background-color: white;
 }
 
 .member_details .member_image{
@@ -1400,7 +1465,18 @@ textarea {
     font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
 }
+.popup_close{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
 
+
+
+}
 
 
 .member_content .designation {

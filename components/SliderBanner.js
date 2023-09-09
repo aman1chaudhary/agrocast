@@ -1,7 +1,5 @@
 import React from 'react'
 import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 import Slider1 from '../public/images/main-slider/slide1.jpg';
 import Slider2 from '../public/images/main-slider/slide2.jpg';
 import Slider3 from '../public/images/main-slider/slide3.jpg';
@@ -33,7 +31,7 @@ const SliderBanner = () => {
 
     var settings = {
         arrows: true,
-        dots: false,
+        dots: true,
         slidesToShow: 1,
         infinite: true,
         autoplay: true,

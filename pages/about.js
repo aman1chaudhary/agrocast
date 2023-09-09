@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import Image from 'next/image';
 import Head from 'next/head';
-
+import { FaTimes } from 'react-icons/fa';
 import pic1 from '../public/images/our-team/pic1.jpg';
 import pic2 from '../public/images/our-team/pic2.jpg';
 import pic3 from '../public/images/our-team/pic3.jpg';
@@ -84,22 +84,31 @@ const TeamData = [
 
 const AboutPage = () => {
     const [selectedMember, setSelectedMember] = useState(null);
-    const memberDetailsRef = useRef(null);
+    const memberDetailsRef = useRef()
 
     const handleMemberClick = (id) => {
-        if (selectedMember === id) {
-            setSelectedMember(null); // Deselect the member if already selected
+        const isMobile = window.innerWidth < 767;
+      
+        if (selectedMember === id && isMobile) {
+          setSelectedMember(null); // Deselect the member if already selected
         } else {
-            setSelectedMember(id);
-            // Scroll to the member's details
+          setSelectedMember(id);
+          // Scroll to the member's details if it's a mobile device
+          if (isMobile) {
             memberDetailsRef.current.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
+              behavior: 'smooth',
+              block: 'start',
             });
+          }
         }
+      };
+      
+
+    const handleClose = () => {
+        setSelectedMember(null);
+
     };
 
-    console.log()
 
     return (
         <>
@@ -154,33 +163,36 @@ const AboutPage = () => {
                             </div>
                         ))}
                     </div>
+
                     <div ref={memberDetailsRef}>
                         {selectedMember && (
-                            <div className="row member_details" >
-                                <div className="col-lg-4 col-md-4 col-sm-12">
-                                    <div className="member_image">
-                                        <Image src={TeamData.find((member) => member.id === selectedMember).images} alt="" />
+                            <div className='member_details_container'>
+                                <button className='popup_close' onClick={handleClose}><FaTimes /></button>
 
-                                    </div>
-                                </div>
-                                <div className='col-lg-8 col-md-8 col-sm-12'>
-                                    <div className="member_content">
-                                        <h4 className="name">{TeamData.find((member) => member.id === selectedMember).name}</h4>
-                                        <p className="designation">{TeamData.find((member) => member.id === selectedMember).role}</p>
-                                        <span className="about">{TeamData.find((member) => member.id === selectedMember).about}</span>
-                                        <div className="footer_social_icons">
-                                            <a href={TeamData.find((member) => member.id === selectedMember).LinkedIn} target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
-                                            <a href={TeamData.find((member) => member.id === selectedMember).Email} className="social_icons twitter"><i className="fa fa-envelope"></i></a>
+                                <div className="row member_details" >
+                                    <div className="col-lg-4 col-md-4 col-sm-12">
+                                        <div className="member_image">
+                                            <Image src={TeamData.find((member) => member.id === selectedMember).images} alt="" />
+
                                         </div>
+                                    </div>
+                                    <div className='col-lg-8 col-md-8 col-sm-12'>
+                                        <div className="member_content">
+                                            <h4 className="name">{TeamData.find((member) => member.id === selectedMember).name}</h4>
+                                            <p className="designation">{TeamData.find((member) => member.id === selectedMember).role}</p>
+                                            <span className="about">{TeamData.find((member) => member.id === selectedMember).about}</span>
+                                            <div className="footer_social_icons">
+                                                <a href={TeamData.find((member) => member.id === selectedMember).LinkedIn} target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
+                                                <a href={TeamData.find((member) => member.id === selectedMember).Email} className="social_icons twitter"><i className="fa fa-envelope"></i></a>
+                                            </div>
 
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         )}
                     </div>
-
-
 
                 </div>
                 {/* <div className="page_section">

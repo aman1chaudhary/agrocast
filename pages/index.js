@@ -21,6 +21,8 @@ import work7 from "../public/images/about/work-7.jpg"
 import work8 from "../public/images/about/work-8.jpg"
 import work9 from "../public/images/about/work-9.jpg"
 import AchievementsCarousel from '../components/AchievementsCarousel'
+import MediaAndTalkCarousel from '../components/MediaAndTalk'
+import MembershipAndCertificate from '../components/MembershipAndCertificate'
 
 const ProjectMap = dynamic(() => import('../components/ProjectMap'), {
   ssr: false,
@@ -83,7 +85,7 @@ export default function Home() {
               <div className='col-lg-3 col-md-12'>
                 <div className="page_section_heading our_work" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
-                  <p>We take immense pride in our past projects, each a testament our unwavering commitment to Agriculture, Water and Climate Change sectors. We have carried out projects for solar parks, metro and museum.</p>
+                  <p>We take immense pride in our past projects, each a testament our unwavering commitment to Agriculture, Water and Climate Change sectors. We serve the follwoing sectors:</p>
                 </div>
 
                 <div className='work_glance_container'>
@@ -182,10 +184,28 @@ export default function Home() {
 
           <div className='page_section'>
             <div className="page_section_heading">
-              <h2>Our Achievements</h2>
+              <h2>Achievements</h2>
             </div>
             <AchievementsCarousel />
 
+          </div>
+
+
+
+          <div className='page_section'>
+            <div className="page_section_heading">
+              <h2>Membership and Certificate</h2>
+            </div>
+            <MembershipAndCertificate />
+
+          </div>
+
+
+          <div className='page_section'>
+            <div className="page_section_heading">
+              <h2>Media and Talks</h2>
+            </div>
+            <MediaAndTalkCarousel />
           </div>
 
 

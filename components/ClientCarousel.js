@@ -2,28 +2,25 @@ import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import logo1 from '../public/images/client-logo/logo1.png';
-import logo3 from '../public/images/client-logo/logo3.png';
-import logo4 from '../public/images/client-logo/logo4.png';
-import logo5 from '../public/images/client-logo/logo5.png';
-import logo6 from '../public/images/client-logo/logo6.png';
-import logo7 from '../public/images/client-logo/logo7.png';
-import logo8 from '../public/images/client-logo/logo8.png';
-import logo9 from '../public/images/client-logo/logo9.png';
-import logo10 from '../public/images/client-logo/logo10.png';
-import logo11 from '../public/images/client-logo/logo11.png';
-import logo12 from '../public/images/client-logo/logo12.png';
-import logo13 from '../public/images/client-logo/logo13.png';
-import logo14 from '../public/images/client-logo/logo14.png';
-import logo15 from '../public/images/client-logo/logo15.png';
+import logo1 from '../public/images/client-logo/logo1.jpg';
+import logo2 from '../public/images/client-logo/logo2.jpg';
+import logo5 from '../public/images/client-logo/logo5.jpg';
+import logo6 from '../public/images/client-logo/logo6.jpg';
+import logo8 from '../public/images/client-logo/logo8.jpg';
+import logo9 from '../public/images/client-logo/logo9.jpg';
+import logo10 from '../public/images/client-logo/logo10.jpg';
+import logo11 from '../public/images/client-logo/logo11.jpg';
+import logo12 from '../public/images/client-logo/logo12.jpg';
+import logo13 from '../public/images/client-logo/logo13.jpg';
+import logo14 from '../public/images/client-logo/logo14.jpg';
+import logo15 from '../public/images/client-logo/logo15.jpg';
 import Image from 'next/image';
 
 
 
 const imgblog =[
-	{image:logo1, }, {image:logo3, },
-	{image:logo4, }, {image:logo5, }, {image:logo6, },
-	{image:logo7, }, {image:logo8, }, {image:logo9, },
+	{image:logo1, },  {image:logo5, }, {image:logo2, }, 
+	{image:logo8, }, {image:logo9, },{image:logo6, }, 
 	{image:logo10, }, {image:logo11, }, {image:logo12, },
 	{image:logo13, }, {image:logo14, }, {image:logo15, },
 ]
@@ -51,7 +48,7 @@ const ClientCarousel = () => {
 
 var settings = {		
 			arrows: true,
-            slidesToShow: 6,	
+            slidesToShow: 4,	
             infinite: true,
 			autoplay: true,
 			nextArrow: <SampleNextArrow />,
@@ -61,13 +58,13 @@ var settings = {
 				{
 				  breakpoint: 1200,
 				  settings: {
-					slidesToShow: 6,
+					slidesToShow: 4,
 				  }
 				},
 				{
 				  breakpoint: 1024,
 				  settings: {
-					slidesToShow: 5,
+					slidesToShow: 4,
 				  }
 				},
 				{
