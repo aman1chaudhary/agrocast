@@ -58,6 +58,7 @@ const Footer = () => {
                   <div className='footer_item_icon_content'>
                     <strong>Email: </strong>support@agrocastanalytics.com
                   </div>
+                  
                 </div>
 
               </div>
@@ -68,7 +69,7 @@ const Footer = () => {
                 <div className="footer_social_icons">
                   {/* <a href={"#"} className="social_icons facebook" target='blank'><i className="fa fa-facebook"></i></a> */}
                   <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
-                  <a href="mailto:support@agrocastanalytics.com" className="social_icons twitter"><i className="fa fa-envelope"></i></a>
+                  {/* <a href="mailto:support@agrocastanalytics.com" className="social_icons twitter"><i className="fa fa-envelope"></i></a> */}
                 </div>
               </div>
 

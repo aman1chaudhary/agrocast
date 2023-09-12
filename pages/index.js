@@ -123,10 +123,15 @@ export default function Home() {
           <div className='page_section'>
             <div className='row'>
               <div className='col-lg-9 col-md-12'>
+              <div className="page_section_heading our_work_mobile" >
+                  <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
+
+                </div>
+
                 <ProjectMap />
               </div>
               <div className='col-lg-3 col-md-12'>
-                <div className="page_section_heading our_work" >
+                <div className="page_section_heading our_work_desktop" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
                   <p>We take immense pride in our past projects, each a testament our unwavering commitment to serve the follwoing sectors:</p>
                 </div>

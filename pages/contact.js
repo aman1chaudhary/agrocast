@@ -233,6 +233,17 @@ const ContactPage = () => {
                                     <p>+91 7600756598</p>
 
                                 </div>
+                                
+                            </div>
+                            <div className='contact_card_item'>
+                                <div className='contact_card_item_icon'>
+                                    <i className="ti-linkedin"></i>
+                                </div>
+                                
+                                <div className='contact_card_item_content'>
+                                    <h5>LinkedIn</h5>
+
+                                </div>
                             </div>
 
 

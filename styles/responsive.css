@@ -344,7 +344,12 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
     padding:10px;
 }
-    
+.our_work_deskto h2{
+    display: none;
+}
+.our_work_mobile h2{
+    display: block;
+}
 
     
 

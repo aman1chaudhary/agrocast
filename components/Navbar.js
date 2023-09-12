@@ -16,19 +16,20 @@ const Navbar = () => {
 
     return (
         <div className='main_nav_container'>
-            <div className="short_nav_container">
+            {/* <div className="short_nav_container">
                 <div className="short_nav_item">
                         <p><i className="flaticon-phone-call"></i> +91 7600756598</p>
                         <p><i className="ti-location-pin"></i> Research Park, IIT Gandhinagar, Gujarat, 382355</p>
 
                 </div>
                 <div className="short_nav_item">
-                        {/* <p><i className="fa fa-brands fa-skype"></i> Agency.software</p> */}
+                        <p><i className="fa fa-brands fa-skype"></i> Agency.software</p>
                         <p><i className="ti-email"></i>support@agrocastanalytics.com</p>
                 </div>
 
 
-            </div>
+            </div> */}
+            
             <div className="navbar_container">
                 <div className="navbar__logo">
                     <Link href="/">

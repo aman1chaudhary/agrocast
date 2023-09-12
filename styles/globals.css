@@ -305,7 +305,7 @@ a {
 
 
 .page_container {
-    margin-top: 140px;
+    margin-top: 80px;
     min-height: 50vh;
 }
 
@@ -670,10 +670,22 @@ a {
 
 
 
-.our_work p {
+.our_work_desktop p {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
 
+}
+.our_work_mobile p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.our_work_deskto h2{
+    display: block;
+}
+.our_work_mobile h2{
+    display: none;
 }
 
 
@@ -1906,4 +1918,5 @@ textarea {
 .work_glance_item .inner-box:hover .image-content {
     bottom: 40%;
 }
+
 
