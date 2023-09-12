@@ -24,7 +24,7 @@ const AgricultureService = () => {
             <div className="page_container">
 
 
-                <header id="page-header">
+                <header className='page_header ariculture_img'>
                     <div className="page-heading">
                         <h2>Agriculture</h2>
                         <p><Link href="/">Services</Link> &#187; Agriculture</p>

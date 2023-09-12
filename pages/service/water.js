@@ -37,7 +37,7 @@ const WaterService = () => {
             
 
             <div className="page_container">
-                <header id="page-header">
+                <header className='page_header water_img'>
                     <div className="page-heading">
                         <h2>Water Resources</h2>
                         <p><Link href="/">Services</Link> &#187; Water Resources</p>
