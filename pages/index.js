@@ -24,6 +24,46 @@ import AchievementsCarousel from '../components/AchievementsCarousel'
 import MediaAndTalkCarousel from '../components/MediaAndTalk'
 import MembershipAndCertificate from '../components/MembershipAndCertificate'
 
+
+
+const WorkGlance = [
+  {
+    Image: work1,
+    Description: "Agriculture"
+  },
+  {
+    Image: work2,
+    Description: "Water Resources"
+  },
+  {
+    Image: work3,
+    Description: "Solar"
+  },
+  {
+    Image: work4,
+    Description: "Industry"
+  },
+  {
+    Image: work5,
+    Description: "Urban Planning"
+  },
+  {
+    Image: work6,
+    Description: "Dam Safety"
+  },
+  {
+    Image: work7,
+    Description: "Metro"
+  },
+  {
+    Image: work8,
+    Description: "Insurance"
+  },
+  {
+    Image: work9,
+    Description: "Banking"
+  },
+]
 const ProjectMap = dynamic(() => import('../components/ProjectMap'), {
   ssr: false,
 });
@@ -74,10 +114,10 @@ export default function Home() {
 
 
 
+
+
+
           <div className='page_section'>
-            <div className="page_section_heading">
-              {/* <h2>A Glance of Our Work</h2> */}
-            </div>
             <div className='row'>
               <div className='col-lg-9 col-md-12'>
                 <ProjectMap />
@@ -89,38 +129,22 @@ export default function Home() {
                 </div>
 
                 <div className='work_glance_container'>
-                  <div className='row work_glance_item'>
-                    <div className='col-4 '>
-                      <Image src={work1} />
-                    </div>
-                    <div className='col-4'>
-                      <Image src={work6} />
-                    </div>
-                    <div className='col-4'>
-                      <Image src={work9} />
-                    </div>
-                  </div>
-                  <div className='row work_glance_item'>
-                    <div className='col-4'>
-                      <Image src={work4} />
-                    </div>
-                    <div className='col-4'>
-                      <Image src={work3} />
-                    </div>
-                    <div className='col-4'>
-                      <Image src={work2} />
-                    </div>
-                  </div>
-                  <div className='row work_glance_item'>
-                    <div className='col-4'>
-                      <Image src={work5} />
-                    </div>
-                    <div className='col-4'>
-                      <Image src={work8} />
-                    </div>
-                    <div className='col-4'>
-                      <Image src={work7} />
-                    </div>
+                  <div className='row'>
+                    {WorkGlance.map((item, index) => (
+                      <div key={index} className="work_glance_item col-lg-4 col-md-4 col-4">
+                        <div className="inner-box">
+                          <div className="image-box">
+                            <div className="image">
+                              <Image src={item.Image} />
+                              <div className="image-content">
+                                <p>{item.Description}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+
                   </div>
                 </div>
 

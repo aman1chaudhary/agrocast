@@ -7,17 +7,6 @@ import Image from 'next/image';
 
 
 
-const imgblog = [
-	{
-		image: img1,
-		description: "IEI – The Institution of Engineers (India)",
-	},
-	{
-		image: img2,
-		description: "IWWA – Indian Water Works Association",
-	},	
-
-]
 
 function SampleNextArrow(props) {
     const { onClick } = props;
@@ -37,16 +26,45 @@ function SamplePrevArrow(props) {
     );
 }
 
-const ImageSlideshow = () => {
 
+function SampleDots(props) {
+    const { onClick } = props;
+    return (
+        <div className="slick-dots">
+            <button className="" onClick={onClick}>Change</button>
+        </div>
+    );
+}
 
-
+const ImageSlideshow = ({ images }) => {
     var settings = {
-        arrows: true,
+        arrows: false,
         dots: true,
         slidesToShow: 1,
         infinite: true,
         autoplay: true,
+        appendDots: dots => (
+            <div
+              style={{
+                backgroundColor: "rgba(0,0,0,0.2)",
+                // borderRadius: "10px",
+                padding: "10px"
+              }}
+            >
+              <ul style={{ margin: "0px" }}> {dots} </ul>
+            </div>
+          ),
+        //   customPaging: i => (
+        //     <div
+        //       style={{
+        //         // width: "30px",
+        //         // color: "black",
+        //         border: "1px black solid"
+        //       }}
+        //     >
+        //       {i + 1}
+        //     </div>
+        //   ),
         // nextArrow: <SampleNextArrow />,
         // prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -77,11 +95,11 @@ const ImageSlideshow = () => {
     return (
         <div>
             <Slider {...settings}>
-            {imgblog.map((card, index) => (
-					<div key={index} className=''>
-						<Image src={card.image} alt="Image" />
-					</div>
-				))}
+                {images.map((card, index) => (
+                    <div key={index} className=''>
+                        <Image src={card.image} alt="Image" />
+                    </div>
+                ))}
 
 
             </Slider>

@@ -83,6 +83,7 @@ const MembershipAndCertificate = () => {
 		arrows: true,
 		slidesToShow: 4,
 		infinite: true,
+		// adaptiveHeight: true,
 		autoplay: true,
 		nextArrow: <SampleNextArrow />,
 		prevArrow: <SamplePrevArrow />,

@@ -28,15 +28,14 @@ function SamplePrevArrow(props) {
 const SliderBanner = () => {
 
 
-
     var settings = {
-        arrows: true,
+        arrows: false, // For arrows to add make it to true
         dots: true,
         slidesToShow: 1,
         infinite: true,
         autoplay: true,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />,
         responsive: [
             {
                 breakpoint: 1200,

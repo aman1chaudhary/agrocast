@@ -88,7 +88,7 @@ const ContactPage = () => {
                                             <input
                                                 name="name"
                                                 type="text" required
-                                                placeholder="First Name"
+                                                placeholder="Name"
                                                 value={formData.name}
                                                 onChange={handleChange} />
                                         </div>
@@ -101,7 +101,7 @@ const ContactPage = () => {
                                             <input
                                                 name="phone"
                                                 type="text" required
-                                                placeholder="Phone"
+                                                placeholder="Phone Number"
                                                 value={formData.phone}
                                                 onChange={handleChange} />
                                         </div>
@@ -115,7 +115,7 @@ const ContactPage = () => {
                                                 name="email"
                                                 type="email"
                                                 required
-                                                placeholder="Your Email Id"
+                                                placeholder="Email Id"
                                                 value={formData.email}
                                                 onChange={handleChange} />
                                         </div>

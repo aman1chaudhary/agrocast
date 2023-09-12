@@ -5,12 +5,26 @@ import WaterService2 from '../../public/images/our-services/WaterService2.gif';
 import WaterService3 from '../../public/images/our-services/WaterService3.jpg';
 import WaterService4 from '../../public/images/our-services/WaterService4.jpg';
 import SolarService1 from '../../public/images/our-services/SolarService1.jpg';
-import SolarService2 from '../../public/images/our-services/SolarService2.gif';
+import SolarService2 from '../../public/images/our-services/SolarService2.jpg';
 import SolarService3 from '../../public/images/our-services/SolarService3.jpg';
 
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
+import ImageSlideshow from '../../components/ImageSlideshow';
+
+const imgblog = [
+	{
+		image: SolarService1,
+	},
+	{
+		image: SolarService2,
+	},	
+    {
+		image: SolarService3,
+	},	
+
+]
 
 const WaterService = () => {
     return (
@@ -34,7 +48,8 @@ const WaterService = () => {
                     <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
-                                <Image src={SolarService2} data-tilt alt='Service' />
+                                {/* <Image src={SolarService2} data-tilt alt='Service' /> */}
+                                <ImageSlideshow images={imgblog}/>
                             </div>
 
                         </div>
