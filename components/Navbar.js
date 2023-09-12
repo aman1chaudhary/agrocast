@@ -80,7 +80,7 @@ const Navbar = () => {
                                 Contact Us
                             </Link>
 
-                            <a href="https://agrocastanalytics.com/gcc-dashboard/index.php" className=' nav__item' target='_blank' rel="noreferrer" ><button className='navbar_btn'>Dashboard</button> </a>
+                            {/* <a href="https://agrocastanalytics.com/gcc-dashboard/index.php" className=' nav__item' target='_blank' rel="noreferrer" ><button className='navbar_btn'>Dashboard</button> </a> */}
 
 
                         </div>

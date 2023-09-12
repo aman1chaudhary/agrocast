@@ -88,7 +88,7 @@ export default function Home() {
 
           <div className='page_section'>
             <div className='row'>
-              <div className='col-md-4'>
+              <div className='col-md-6'>
                 <div className='our_mission_section'>
                   <div>
                     <div className="page_section_heading">
@@ -101,8 +101,11 @@ export default function Home() {
 
 
               </div>
-              <div className='col-md-8'>
-                <div className="feature-img-bx">
+              <div className='col-md-6'>
+                {/* <div className="feature-img-bx">
+                  <Image src={ourMissionImg} alt="" />
+                </div> */}
+                <div className="our_mission">
                   <Image src={ourMissionImg} alt="" />
                 </div>
 
@@ -125,7 +128,7 @@ export default function Home() {
               <div className='col-lg-3 col-md-12'>
                 <div className="page_section_heading our_work" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
-                  <p>We take immense pride in our past projects, each a testament our unwavering commitment to Agriculture, Water and Climate Change sectors. We serve the follwoing sectors:</p>
+                  <p>We take immense pride in our past projects, each a testament our unwavering commitment to serve the follwoing sectors:</p>
                 </div>
 
                 <div className='work_glance_container'>
