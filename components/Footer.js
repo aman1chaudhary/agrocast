@@ -51,6 +51,8 @@ const Footer = () => {
                   </div>
                 </div>
 
+                
+
                 <div className='footer_item_icon_section'>
                   <div className='footer_item_icon'>
                     <i className="ti-email"></i>
@@ -61,6 +63,9 @@ const Footer = () => {
                   
                 </div>
 
+                <a href="mailto:support@agrocastanalytics.com" className="social_icons twitter"><i className="fa fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons facebook"><i className="fa fa-facebook"></i></a>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 footer-col-4 ">
@@ -68,7 +73,7 @@ const Footer = () => {
                 <Image src={Logo} alt='Logo' />
                 <div className="footer_social_icons">
                   {/* <a href={"#"} className="social_icons facebook" target='blank'><i className="fa fa-facebook"></i></a> */}
-                  <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
+                  {/* <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a> */}
                   {/* <a href="mailto:support@agrocastanalytics.com" className="social_icons twitter"><i className="fa fa-envelope"></i></a> */}
                 </div>
               </div>
