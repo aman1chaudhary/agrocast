@@ -442,7 +442,7 @@ a {
 #page-header {
     /* height: 100%; */
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -457,7 +457,7 @@ a {
 }
 
 .page_header {
-    height: 200px;
+    height: 300px;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -478,6 +478,14 @@ a {
 }
 .water_img {
     background: rgba(0, 0, 0, 0.5) url("/images/banner/water_banner.gif");
+    background-size: 100% auto;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-blend-mode: overlay;
+
+}
+.climate_img {
+    background: rgba(0, 0, 0, 0) url("/images/banner/climate_banner.gif");
     background-size: 100% auto;
     /* background-attachment: fixed; */
     background-position: center;

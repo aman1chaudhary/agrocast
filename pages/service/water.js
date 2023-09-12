@@ -147,7 +147,7 @@ const WaterService = () => {
                             <div className="services_card_content">
                                 <h3>Ground Water Investigation</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
-                                <p>Groundwater mapping using electric resistivity survey</p>
+                                {/* <p>Groundwater mapping using electric resistivity survey</p> */}
                                 <ul>
                                     <li>To identify aquifer zone</li>
                                     <li>To estimate aquifer recharge rate</li>

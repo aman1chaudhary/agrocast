@@ -26,7 +26,7 @@ const ClimateRiskService = () => {
             </Head>
 
             <div className="page_container">
-                <header id="page-header">
+                <header className='page_header climate_img'>
                     <div className="page-heading">
                         <h2>Climate Risk</h2>
                         {/* <p><Link href="/">Services</Link> &#187; Climate Risk</p> */}
