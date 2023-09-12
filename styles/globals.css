@@ -695,6 +695,7 @@ a {
     padding: 5px 15px;
     margin-bottom: 5px;
     border: none;
+    background-color: #ffffff;
 
 }
 .input_group select {
@@ -705,6 +706,7 @@ a {
     padding: 5px 15px;
     margin-bottom: 5px;
     border: none;
+    background-color: #ffffff;
 
 }
 .input_group textarea {
@@ -714,6 +716,7 @@ a {
     width: 100%;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
 
 }
 

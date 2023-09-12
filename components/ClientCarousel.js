@@ -70,19 +70,19 @@ var settings = {
 				{
 				  breakpoint: 768,
 				  settings: {
-					slidesToShow: 4,
+					slidesToShow: 3,
 				  }
 				},
 				{
 				  breakpoint: 591,
 				  settings: {
-					slidesToShow: 3,
+					slidesToShow: 1,
 				  }
 				},
 				{
 				  breakpoint: 360,
 				  settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 				  }
 				},
 			]
