@@ -27,7 +27,7 @@ const AgricultureService = () => {
                 <header className='page_header ariculture_img'>
                     <div className="page-heading">
                         <h2>Agriculture</h2>
-                        <p><Link href="/">Services</Link> &#187; Agriculture</p>
+                        {/* <p><Link href="/">Services</Link> &#187; Agriculture</p> */}
                     </div>
                 </header>
 
@@ -108,7 +108,12 @@ const AgricultureService = () => {
                             <div className="services_card_content">
                                 <h3>Drought Monitor</h3>
                                 {/* <p>Monitor drought propagation with time</p> */}
-                                <p>Drought is the costliest natural disaster. Monitoring drought ahead of time helps reduce the unpleasant impact on water and agriculture sectors. We monitor meteorological and hydrological drought at fine resolution. The drought monitoring system provides information on drought severity and area extent well in advance giving the partners time to mitigate and counter the impact of drought.</p>
+                                <ul>
+                                    <li>Drought is the costliest natural disaster. Monitoring drought ahead of time helps reduce the unpleasant impact on water and agriculture sectors. 
+                                    </li>
+                                    <li>We monitor meteorological and hydrological drought at fine resolution. The drought monitoring system provides information on drought severity and area extent well in advance giving the partners time to mitigate and counter the impact of drought.</li>
+                                </ul>
+                                
                             </div>
                         </div>
                     </div>
@@ -124,7 +129,16 @@ const AgricultureService = () => {
                             <div className="services_card_content">
                                 <h3>Crop Acreage</h3>
                                 {/* <p>Monitor crop stress</p> */}
-                                <p>Using high resolution satellite images modeling along with Machine Learning, we classify crops and estimate crop yield for season.</p>
+                                <ul>
+
+
+
+                                    <li>Using high resolution satellite images modeling along with Machine Learning, we classify crops and estimate crop yield for season.
+                                    </li>
+
+
+                                </ul>
+
                             </div>
                         </div>
                     </div>

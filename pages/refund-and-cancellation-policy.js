@@ -14,7 +14,7 @@ const RefundAndCancellation = () => {
         <header id="page-header">
           <div className="page-heading">
             <h2>Refund & Cancellation Policy</h2>
-            <p><Link href="/">Home</Link> &#187; Refund & Cancellation Policy</p>
+            {/* <p><Link href="/">Home</Link> &#187; Refund & Cancellation Policy</p> */}
           </div>
         </header>
 

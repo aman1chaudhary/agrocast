@@ -14,15 +14,15 @@ import Link from 'next/link';
 import ImageSlideshow from '../../components/ImageSlideshow';
 
 const imgblog = [
-	{
-		image: SolarService1,
-	},
-	{
-		image: SolarService2,
-	},	
     {
-		image: SolarService3,
-	},	
+        image: SolarService1,
+    },
+    {
+        image: SolarService2,
+    },
+    {
+        image: SolarService3,
+    },
 
 ]
 
@@ -34,13 +34,13 @@ const WaterService = () => {
                 <meta name="description" content="AgroCast Analytics Pvt Ltd is an Indian registered startup that provides consultancy services in Agriculture, Water, and Climate change sectors. Our mission is to build a climate-resilient society by analyzing and eliminating the current and projected risk associated with the agriculture and water sector considering climate change threats." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            
+
 
             <div className="page_container">
                 <header className='page_header water_img'>
                     <div className="page-heading">
                         <h2>Water Resources</h2>
-                        <p><Link href="/">Services</Link> &#187; Water Resources</p>
+                        {/* <p><Link href="/">Services</Link> &#187; Water Resources</p> */}
                     </div>
                 </header>
 
@@ -49,7 +49,7 @@ const WaterService = () => {
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
                                 {/* <Image src={SolarService2} data-tilt alt='Service' /> */}
-                                <ImageSlideshow images={imgblog}/>
+                                <ImageSlideshow images={imgblog} />
                             </div>
 
                         </div>
@@ -59,20 +59,20 @@ const WaterService = () => {
                                 {/* <p><b>{service.Subheading}</b></p> */}
                                 {/* <p>A comprehensive report on watershed management is offered by incorporating current data on aspects such as land use, land cover, soil, elevation, and climatic variables. Physics-based hydrological modeling has been used to simulate the water budget and stream flow. Leveraging our expertise, stakeholders, including solar park owners, insurance companies, state water departments, and dam authorities, can make well-informed decisions regarding resource allocation and development within the study area.</p> */}
                                 <ul>
-                                
 
 
-                                <li>Develop high resolution DEM, DSM, 3D model and Point cloud of study area using UAV.
+
+                                    <li>Develop high resolution DEM, DSM, 3D model and Point cloud of study area using UAV.
                                     </li>
                                     <li>Watershed delineation. </li>
                                     <li> Simulate water budget components (Runoff, Baseflow, Soil Moisture and Evapotranspiration). </li>
                                     <li>Analysis of flood events.</li>
                                     <li> Prepare flood inundation maps (water depth and water level). </li>
                                     <li>Design drainage system to prevent water logging.</li>
-                                   
+
                                 </ul>
-                                
-                                
+
+
                             </div>
                         </div>
                     </div>
@@ -95,10 +95,10 @@ const WaterService = () => {
                                     We specialized in comprehensive dam breach modeling and analysis, leveraging our expertise in feasibility-level planning and advanced forecasting techniques. Our suite of services encompasses:<br /></p> */}
                                 <ul>
 
-                                <li>Dam Breach Modeling & Inundation Mapping: Delivering insights through various Annual Return Interval (ARI) maps.</li>
-                                <li>Probable Maximum Flood (PMF) Studies: Analyzing the worst-case scenarios to provide robust flood estimates.</li>
-                                <li>Hazard Classification Studies: Evaluating the potential risks associated with dam infrastructure and operations.</li>
-                                <li>Emergency Action Plan (EAP) Development: Formulating actionable plans to ensure prompt responses during emergency scenarios, safeguarding communities and resources.</li>
+                                    <li>Dam Breach Modeling & Inundation Mapping: Delivering insights through various Annual Return Interval (ARI) maps.</li>
+                                    <li>Probable Maximum Flood (PMF) Studies: Analyzing the worst-case scenarios to provide robust flood estimates.</li>
+                                    <li>Hazard Classification Studies: Evaluating the potential risks associated with dam infrastructure and operations.</li>
+                                    <li>Emergency Action Plan (EAP) Development: Formulating actionable plans to ensure prompt responses during emergency scenarios, safeguarding communities and resources.</li>
 
                                 </ul>
 
@@ -120,7 +120,17 @@ const WaterService = () => {
                             <div className="services_card_content">
                                 <h3>Scouring and Sedimentation analysis for Hydraulic Infrastructure Resilience</h3>
                                 {/* <p><b>{service.Subheading}</b></p> */}
-                                <p>Quantitative Sediment Profiles: comprehensive insights into sediment transport rates, erosion-deposition patterns, and temporal sediment behaviors, presented in graphical and tabulated format.</p>
+                                <ul>
+
+
+
+                                    <li>Quantitative Sediment Profiles: comprehensive insights into sediment transport rates, erosion-deposition patterns, and temporal sediment behaviors, presented in graphical and tabulated format.
+                                    </li>
+
+
+                                </ul>
+
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -144,7 +154,7 @@ const WaterService = () => {
                                     <li>To design bore well and artificial recharge structure.</li>
 
                                 </ul>
-                                
+
                             </div>
                         </div>
 

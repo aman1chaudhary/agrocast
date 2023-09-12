@@ -66,7 +66,7 @@ const ContactPage = () => {
                 <header id="page-header">
                     <div className="page-heading">
                         <h2>Contact Us</h2>
-                        <p><Link href="/">Home</Link> &#187; Contact Us</p>
+                        {/* <p><Link href="/">Home</Link> &#187; Contact Us</p> */}
                     </div>
                 </header>
 

@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
         <header id="page-header">
           <div className="page-heading">
             <h2>Privacy Policy</h2>
-            <p><Link href="/">Home</Link> &#187; Privacy Policy</p>
+            {/* <p><Link href="/">Home</Link> &#187; Privacy Policy</p> */}
           </div>
         </header>
 

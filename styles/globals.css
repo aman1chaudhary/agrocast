@@ -440,8 +440,9 @@ a {
 
 
 #page-header {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    height: 200px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -456,7 +457,7 @@ a {
 }
 
 .page_header {
-    height: 100%;
+    height: 200px;
     width: 100%;
     padding: 0px;
     margin: 0px;

@@ -122,7 +122,7 @@ const AboutPage = () => {
                 <header id="page-header">
                     <div className="page-heading">
                         <h2>About Us</h2>
-                        <p><Link href="/">Home</Link> &#187; About Us</p>
+                        {/* <p><Link href="/">Home</Link> &#187; About Us</p> */}
                     </div>
                 </header>
 

@@ -29,7 +29,7 @@ const ClimateRiskService = () => {
                 <header id="page-header">
                     <div className="page-heading">
                         <h2>Climate Risk</h2>
-                        <p><Link href="/">Services</Link> &#187; Climate Risk</p>
+                        {/* <p><Link href="/">Services</Link> &#187; Climate Risk</p> */}
                     </div>
                 </header>
 

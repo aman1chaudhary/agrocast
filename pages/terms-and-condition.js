@@ -16,7 +16,7 @@ const TermsCondition = () => {
                 <header id="page-header">
                     <div className="page-heading">
                         <h2>Terms & Conditions</h2>
-                        <p><Link href="/">Home</Link> &#187; Terms & Conditions</p>
+                        {/* <p><Link href="/">Home</Link> &#187; Terms & Conditions</p> */}
                     </div>
                 </header>
 
