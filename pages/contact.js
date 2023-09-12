@@ -235,7 +235,7 @@ const ContactPage = () => {
                                 </div>
                                 
                             </div>
-                            <div className='contact_card_item'>
+                            {/* <div className='contact_card_item'>
                                 <div className='contact_card_item_icon'>
                                     <i className="ti-linkedin"></i>
                                 </div>
@@ -244,7 +244,7 @@ const ContactPage = () => {
                                     <h5>LinkedIn</h5>
 
                                 </div>
-                            </div>
+                            </div> */}
 
 
                         </div>
