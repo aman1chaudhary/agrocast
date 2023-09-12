@@ -32,6 +32,9 @@
     height: 80vh;
 
 }
+.page_header{
+    height: 400px;
+}
     
 
 
@@ -203,7 +206,7 @@
         /* height: 200px; */
     }
     .page_header {
-        background-size: auto;
+        /* background-size: auto; */
         /* height: 200px; */
     }
     .page-heading h2 {

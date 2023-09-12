@@ -458,6 +458,7 @@ a {
 
 .page_header {
     height: 300px;
+    /* height: 100%; */
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -468,12 +469,17 @@ a {
 
 }
 
+
+
 .ariculture_img {
     background: rgba(0, 0, 0, 0.5) url("/images/banner/agri_banner.gif");
-    background-size: 100% auto;
+    background-size: 100% 100%;
     /* background-attachment: fixed; */
     background-position: center;
+    background-repeat: no-repeat;
     background-blend-mode: overlay;
+    background-size: cover;
+
 
 }
 .water_img {
@@ -481,7 +487,9 @@ a {
     background-size: 100% auto;
     /* background-attachment: fixed; */
     background-position: center;
+    background-repeat: no-repeat;
     background-blend-mode: overlay;
+    background-size: cover;
 
 }
 .climate_img {
@@ -489,7 +497,9 @@ a {
     background-size: 100% auto;
     /* background-attachment: fixed; */
     background-position: center;
+    background-repeat: no-repeat;
     background-blend-mode: overlay;
+    background-size: cover;
 
 }
 

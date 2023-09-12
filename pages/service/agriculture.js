@@ -22,6 +22,7 @@ const AgricultureService = () => {
             </Head>
 
             <div className="page_container">
+                
 
 
                 <header className='page_header ariculture_img'>
