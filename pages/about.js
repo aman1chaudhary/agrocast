@@ -41,7 +41,7 @@ const TeamData = [
         role: "Director",
         BackgroundInformation: ["Bachelor in commerce (B.com)", "Shaily  is native in Gujarati and fluent in Hindi and English", "Mrs. Shaily possesses in-depth knowledge of Tally ERP, a renowned accounting software, ensuring meticulous management and representation of financial data."],
         about: "Mrs. Shaily D. Shah serves as the esteemed Director and CFO of our firm, bringing to the table her robust educational background with a B. Com and an MBA in Finance from Gujarat University. Her ascension to the directorship came during a challenging period following the unfortunate passing of Shri. Love K. Shah, the former Director. Demonstrating resilience and intelligent leadership, Mrs. Shaily has adeptly assumed responsibility for the company's auditing operations, upholding transparency, adherence to standards, and financial accountability. She is well-versed with a comprehensive array of commerce-related courses, encompassing areas from financial accounting and taxation to business law and economics, fortifying the company's financial and operational backbone. Her profound understanding of finance, combined with her unwavering dedication, solidifies the financial foundation of our enterprise, guiding us forward with vision and integrity.",
-        LinkedIn: "https://www.linkedin.com/",
+        LinkedIn: "https://www.linkedin.com/in/shaily-shah-mba-finance-591b9221b/",
     },
     {
         id: "member_4",
@@ -52,7 +52,7 @@ const TeamData = [
         BackgroundInformation: ["Bachelor in Civil  Engineering",
             "Meen is native in Gujarati and fluent in Hindi and English"],
         about: "Mr. Meenkumar Patel is a dynamic Junior Civil Engineer at AgroCast Analytics Pvt. Ltd, with a specialized expertise in the Surveying and GIS sector. Proficient in deploying advanced techniques like DGPS and Drone Surveys, Mr. Patel seamlessly integrates cutting-edge technology with traditional GIS-GPS methodologies to deliver precise and efficient survey outcomes. His foundational internship experiences at GWSSB and hands-on involvement in bridge construction sites during his Bachelor's degree have endowed him with a holistic understanding of the field. His commitment to innovation and continuous learning ensures our projects stand out in quality and precision. A true asset to our team, Meenkumar consistently elevates our standard of work, bringing unmatched expertise and vision to every venture.",
-        LinkedIn: "https://www.linkedin.com/",
+        LinkedIn: "https://www.linkedin.com/in/meen-patel-37a687286/",
     },
     {
         id: "member_5",
@@ -77,7 +77,7 @@ const TeamData = [
         BackgroundInformation: ["Diploma in Civil  Engineering", "Preet is native in Gujarati and fluent in Hindi and English"],
         Email: "mehtapreet1514@gmail.com",
         about: "Mr. Preet Mehta is a proficient Junior Civil Engineer at AgroCast Analytics Pvt. Ltd, showcasing profound expertise in Storm Water Management, Image Processing, Surveying and GIS domain. Proficient in harnessing advanced tools, including DGPS, Drones, and GIS for detailed surveying, Mr. Mehta also holds a distinctive proficiency in image processing techniques, bringing added layers of depth and precision to projects. Further elevating his credentials, he possesses a valid DGCA Drone Pilot license, reflecting not just his expertise in flying drones but also his commitment to adhering to industry standards and safety. An indispensable member of our team, Preet's multifaceted skill set ensures that our projects remain at the forefront of innovation, accuracy, and comprehensive solutions.",
-        LinkedIn: "https://www.linkedin.com/",
+        LinkedIn: "https://www.linkedin.com/in/preet-mehta-b61998284/",
     },
 
 ]
@@ -183,7 +183,7 @@ const AboutPage = () => {
                                             <span className="about">{TeamData.find((member) => member.id === selectedMember).about}</span>
                                             <div className="footer_social_icons">
                                                 <a href={TeamData.find((member) => member.id === selectedMember).LinkedIn} target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
-                                                <a href={TeamData.find((member) => member.id === selectedMember).Email} className="social_icons twitter"><i className="fa fa-envelope"></i></a>
+                                                {/* <a href={TeamData.find((member) => member.id === selectedMember).Email} className="social_icons twitter"><i className="fa fa-envelope"></i></a> */}
                                             </div>
 
 

@@ -42,7 +42,7 @@ const AgricultureService = () => {
                     </div>
                     <div className="row">
                         <div className="faq_video">
-                            <VideoPopup videoID="t_EuAkunsbM" />
+                            <VideoPopup videoID="GIsGxCXWKZs" />
                             <Image src={video_thumbnail} alt="" className="img-cover" />
                         </div>
 

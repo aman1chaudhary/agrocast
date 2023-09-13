@@ -62,10 +62,10 @@ const Footer = () => {
                   </div>
                   
                 </div>
-
-                <a href="mailto:support@agrocastanalytics.com" className="social_icons twitter"><i className="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
-                <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons facebook"><i className="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@AgroCastAnalytics"target='blank' className="social_icons twitter"><i className="fa fa-youtube"></i></a>
+                
+                {/* <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons facebook"><i className="fa fa-facebook"></i></a> */}
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 footer-col-4 ">

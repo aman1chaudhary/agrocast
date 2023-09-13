@@ -141,11 +141,16 @@ const TermsCondition = () => {
                             </div>
 
                             <div className="price_item">
-                                <h4 >6 – 10 Hectare </h4>
+                                <h4 >5 – 10 Hectare </h4>
                                 <p >Rs. 100 Per Hectare</p>
                             </div>
 
                             <div className="price_item">
+                                <h4 >More than 10 Hectare  </h4>
+                                <p >Rs. 50 Per Hectare</p>
+                            </div>
+
+                            {/* <div className="price_item">
                                 <h4 >11-50 Hectare  </h4>
                                 <p >Rs. 50 Per Hectare</p>
                             </div>
@@ -158,7 +163,7 @@ const TermsCondition = () => {
                             <div className="price_item">
                                 <h4 >51 – 100 Hectare </h4>
                                 <p >Rs. 10 Per Hectare</p>
-                            </div>
+                            </div> */}
 
 
 
