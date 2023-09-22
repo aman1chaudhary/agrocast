@@ -23,21 +23,24 @@
         margin: 50px 10vw;
     }
 
-    .banner-content {
-        margin: 200px 10vw;
-    }
-
     .counter_container {
         padding: 30px 15vw;
     }
 
-    .home_carousel {
-        height: 80vh;
+    /* .home_carousel {
+        height: 900px;
 
-    }
+    } */
 
     .page_header {
         height: 400px;
+    }
+    .banner-content {
+        position: absolute;
+        top: 200px;
+        left: 10vw;
+        max-width: 700px; 
+        z-index: 2000000;
     }
 
 
@@ -76,8 +79,9 @@
         width: 180px;
     }
 
-    .home_carousel {
+    .home_carousel img{
         height: 90vh;
+        width: auto;
 
     }
 
@@ -192,7 +196,8 @@
         align-items: left;
         text-align: left;
         justify-content: center;
-        margin: 10vh 20px;
+        top: 50px;
+        left: 20px;
     }
 
     .banner-content h1 {

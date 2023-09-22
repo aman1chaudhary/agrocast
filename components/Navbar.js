@@ -76,7 +76,9 @@ const Navbar = () => {
 
                                 </div>
                             </div>
-
+                            <Link className="nav__item" href="/research-articles" onClick={handleLinkClick}>
+                            Research Articles
+                            </Link>
                             <Link className="nav__item" href="/contact" onClick={handleLinkClick}>
                                 Contact Us
                             </Link>

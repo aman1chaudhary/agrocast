@@ -65,6 +65,7 @@ const SliderBanner = () => {
         <div>
             <Slider {...settings}>
                 <div className='home_carousel home_carousel_img1'>
+                    <Image src={Slider1}/>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
@@ -80,6 +81,7 @@ const SliderBanner = () => {
                 </div>
 
                 <div className='home_carousel home_carousel_img2'>
+                <Image src={Slider2}/>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
@@ -92,6 +94,7 @@ const SliderBanner = () => {
                 </div>
 
                 <div className='home_carousel home_carousel_img3'>
+                <Image src={Slider3}/>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
