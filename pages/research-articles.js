@@ -119,7 +119,7 @@ const ResearchArticles = () => {
                                 ))} </p>
 
                                 <div className='card_btn'>
-                                    <a href={article.ArticleLink} target='blank'><button>Read More</button></a>
+                                    <a href={article.ArticleLink} target='blank'><button>Read Article</button></a>
                                 </div>
 
 
