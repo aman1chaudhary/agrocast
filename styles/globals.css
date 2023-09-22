@@ -1269,7 +1269,7 @@ textarea {
 
 .banner-content {
     position: absolute;
-    top: 10%;
+    top: 150px;
     left: 10vw;
     max-width: 700px; 
     z-index: 2000000;
