@@ -16,6 +16,7 @@ const Footer = () => {
                   <li> <Link href="/about"><i className="fas fa-solid fa-angle-right"></i> About Us</Link></li>
                   {/* <li> <Link href="/service"><i className="fas fa-solid fa-angle-right"></i> Our Services</Link></li> */}
                   <li><Link href="/contact"><i className="fas fa-solid fa-angle-right"></i> Contact Us</Link></li>
+                  <li> <Link href="/privacy-policy"><i className="fas fa-solid fa-angle-right"></i> Privacy Policies</Link></li>
                 </ul>
               </div>
             </div>
@@ -24,8 +25,9 @@ const Footer = () => {
                 <h5>Useful Links</h5>
                 <ul>
                   <li> <Link href="/terms-and-condition"><i className="fas fa-solid fa-angle-right"></i> Terms & Conditions </Link></li>
-                  <li> <Link href="/privacy-policy"><i className="fas fa-solid fa-angle-right"></i> Privacy Policies</Link></li>
+                 
                   <li> <Link href="/refund-and-cancellation-policy"><i className="fas fa-solid fa-angle-right"></i> Refund & Cancellation Policy</Link></li>
+                  <li><a href='https://clustrmaps.com/site/1bwn5' target="_blank" rel="noreferrer"><i className="fas fa-solid fa-angle-right"></i> Website Visitors</a></li>
                 </ul>
 
               </div>
@@ -51,7 +53,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                
+
 
                 <div className='footer_item_icon_section'>
                   <div className='footer_item_icon'>
@@ -60,11 +62,11 @@ const Footer = () => {
                   <div className='footer_item_icon_content'>
                     <strong>Email: </strong>support@agrocastanalytics.com
                   </div>
-                  
+
                 </div>
                 <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons linkedin"><i className="fa fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@AgroCastAnalytics"target='blank' className="social_icons twitter"><i className="fa fa-youtube"></i></a>
-                
+                <a href="https://www.youtube.com/@AgroCastAnalytics" target='blank' className="social_icons youtube"><i className="fa fa-youtube"></i></a>
+
                 {/* <a href="https://www.linkedin.com/company/agrocast-analytics/" target='blank' className="social_icons facebook"><i className="fa fa-facebook"></i></a> */}
               </div>
             </div>
@@ -81,6 +83,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        
 
         <div className="footer_bottom">
 

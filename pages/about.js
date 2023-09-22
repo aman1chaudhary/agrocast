@@ -155,7 +155,7 @@ const AboutPage = () => {
                                 key={data.id}
                                 onClick={() => handleMemberClick(data.id)}
                             >
-                                <Image src={data.images} />
+                                <Image src={data.images} alt='team member'/>
                                 <div className="tree_item_content">
                                     <h4>{data.name}</h4>
                                     <p>{data.role}</p>
@@ -167,7 +167,7 @@ const AboutPage = () => {
                     <div ref={memberDetailsRef}>
                         {selectedMember && (
                             <div className='member_details_container'>
-                                <button className='popup_close' onClick={handleClose}><FaTimes /></button>
+                                
 
                                 <div className="row member_details" >
                                     <div className="col-lg-4 col-md-4 col-sm-12">
@@ -178,6 +178,7 @@ const AboutPage = () => {
                                     </div>
                                     <div className='col-lg-8 col-md-8 col-sm-12'>
                                         <div className="member_content">
+                                        <button className='popup_close' title='close window' onClick={handleClose}><FaTimes /></button>
                                             <h4 className="name">{TeamData.find((member) => member.id === selectedMember).name}</h4>
                                             <p className="designation">{TeamData.find((member) => member.id === selectedMember).role}</p>
                                             <span className="about">{TeamData.find((member) => member.id === selectedMember).about}</span>

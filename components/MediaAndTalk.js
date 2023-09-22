@@ -8,6 +8,7 @@ import img3 from '../public/images/news/3.png';
 import img4 from '../public/images/news/4.png';
 import img5 from '../public/images/news/5.png';
 import img6 from '../public/images/news/6.png';
+import img7 from '../public/images/news/7.png';
 
 
 
@@ -16,6 +17,12 @@ import Image from 'next/image';
 
 
 const imgblog = [
+    
+    {
+        image: img7,
+        description: "Agri Asia Exhibition",
+        Link: ""
+    },
     {
         image: img1,
         description: "The Hindu",

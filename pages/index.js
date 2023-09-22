@@ -123,7 +123,7 @@ export default function Home() {
           <div className='page_section'>
             <div className='row'>
               <div className='col-lg-9 col-md-12'>
-              <div className="page_section_heading our_work_mobile" >
+                <div className="page_section_heading our_work_mobile" >
                   <h2 style={{ textAlign: "left" }}>A Glance of Our Work</h2>
 
                 </div>
@@ -251,7 +251,13 @@ export default function Home() {
 
 
 
+          <div style={{ display: "none" }}>
 
+            <a href="https://clustrmaps.com/site/1bwn5" title="Visit tracker">
+              <img src="//www.clustrmaps.com/map_v2.png?d=l478EeMh0ThPcTSQK8w-vYX6ydQJ7z9wUt2gKay9zV8&cl=ffffff" /></a>
+
+
+          </div>
 
 
 
