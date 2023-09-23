@@ -77,8 +77,8 @@ const TeamData = [
             "Azaz is native in Gujarati and fluent in Hindi and English"],
         about: "Dr. Azaz Pathan is Senior Hydrologist at AgroCast Analytics Pvt. Ltd. He leads  GIS based flood risk assessment, mappings, and hydrological sectors. Before starting AgroCast, Dr. Azaz worked as a Senior Research Fellow in the Indo-Netherlands Project at Indian Institute of Technology Gandhinagar. He has delivered hands-on training (flood modeling) at different university of India and abroad as an expert. Dr. Azaz has published more than 30 research papers in internationally reviewed journals/conference and also presented work in national/international conferences. Dr. Azaz has an intricate knowledge of various software including HEC-RAS, HEC-HMS, SWAT, Arc-GIS, QGIS, SWMM, WaterGEM, QGIS. His area of interests are flood inundation mapping (1D/2D), Flood Risk mapping using MCDM techniques, Flood control measures, Flood resilience strategies, Water Conservation, Water Harvesting, Dam Break Analysis, Dam Safety management, Water Distribution System, Integrated Water Management, Hydrologic modeling.",
         LinkedIn: "https://www.linkedin.com/in/dr-azazkhan-i-pathan-25398870/",
-        GoogleScholar: "",
-        ResearchGate:""
+        GoogleScholar: "https://scholar.google.co.in/citations?user=9lgPRZMAAAAJ&hl=en",
+        ResearchGate:"https://www.researchgate.net/profile/Azazkhan-Ibrahimkhan-Pathan"
     },
 
     {
