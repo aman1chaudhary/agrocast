@@ -17,7 +17,8 @@ export const transporter = nodemailer.createTransport({
 export const mailOptions = {
   from: email, // Sender mail
   // to: email, // In this case receiver and sender will be same
-  to: "support@agrocastanalytics.com", // Reciver mail
+  // to: "support@agrocastanalytics.com", // Reciver mail
+  to: "chaudharypc2604@gmail.com", // Reciver mail
 };
 
 
