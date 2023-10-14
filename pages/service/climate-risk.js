@@ -62,12 +62,12 @@ const ClimateRiskService = () => {
 
                             <div className="col-lg-3" >
                                 <div className="grocast_dashboard_img">
-                                    <Image src={rainfall} alt="" />
+                                    <Image src={rainfall} alt="Climate Service" />
                                 </div>
                             </div>
                             <div className="col-lg-3" >
                                 <div className="grocast_dashboard_img">
-                                    <Image src={max_temp} alt="" />
+                                    <Image src={max_temp} alt="Climate Service" />
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ const ClimateRiskService = () => {
                     <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
-                                <Image src={ClimateService1} data-tilt alt='Service' />
+                                <Image src={ClimateService1} data-tilt alt="Climate Service" />
                             </div>
 
                         </div>
@@ -107,7 +107,7 @@ const ClimateRiskService = () => {
                     <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
-                                <Image src={ClimateService3} data-tilt alt='Service' />
+                                <Image src={ClimateService3} data-tilt alt="Climate Service" />
                             </div>
 
                         </div>

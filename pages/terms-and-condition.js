@@ -1,7 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
-
 
 const TermsCondition = () => {
     return (
@@ -130,7 +128,11 @@ const TermsCondition = () => {
                             <li>Exclude any of our or your liabilities that may not be excluded under applicable law.</li>
 
                         </ul>
-                        The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer are subject to the preceding paragraph and govern all liabilities arising under the disclaimer, including liabilities arising in contract, tort, and breach of statutory duty.
+
+                        <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer are subject to the preceding paragraph and govern all liabilities arising under the disclaimer, including liabilities arising in contract, tort, and breach of statutory duty.
+                        </p>
+
+                        <h4>One-Year Plan:</h4>
                         A user can only avail AgroCast services in their package of choice. Additionally, one time joining fees Rs. 100 needs to be paid by users. The annual subscription package is based on size of farm area, mentioned below:
 
 
@@ -186,6 +188,15 @@ const TermsCondition = () => {
                             <li>We reserve the right to hold void, cancel, suspend, or amend the discount where it becomes necessary to do so.</li>
                         </ul>
 
+
+                        <h4>Refund & cancellation policy</h4>
+
+                        <p>If at any time you are not satisfied with the quality of services of our application, Within 7 days of subscription purchase you may contact us with a reason for dissatisfaction. If your issue is found to be genuine, your subscription may be considered for a claim of credit, replacement or refund. Otherwise, your complaint will be noted and considered for the respective resolution. Furthermore, you hereby confirm and agree that you will not claim or allege anything against AgroCast concerning the digital content provided to you by the app.
+                        </p>
+                        <h4>No Waiver</h4>
+                        <p>
+                            The rights and remedies available under this Policy may be exercised as often as necessary and are cumulative and not exclusive of rights or remedies provided by law. It may be waived only in writing. Delay in exercising or non-exercise of any such right or remedy does not constitute a waiver of that right or remedy, or any other right or remedy.
+                        </p>
 
                     </div>
 

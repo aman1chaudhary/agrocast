@@ -2,15 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import SliderBanner from '../components/SliderBanner'
 import ClientCarousel from '../components/ClientCarousel'
-import HomeContactForm from '../components/HomeContactForm'
-import Link from 'next/link'
-import VideoPopup from '../components/VideoPopup'
-import video_thumbnail from '../public/images/video_thumbnail.jpg';
 import dynamic from 'next/dynamic'
-
 import ourMissionImg from '../public/images/about/our-mission.jpg';
-import CounterSection from '../components/CounterSection'
-import { useRef } from 'react'
 import work1 from "../public/images/about/work-1.jpg"
 import work2 from "../public/images/about/work-2.jpg"
 import work3 from "../public/images/about/work-3.jpg"
@@ -23,7 +16,15 @@ import work9 from "../public/images/about/work-9.jpg"
 import AchievementsCarousel from '../components/AchievementsCarousel'
 import MediaAndTalkCarousel from '../components/MediaAndTalk'
 import MembershipAndCertificate from '../components/MembershipAndCertificate'
+import CountUp from 'react-countup';
 
+
+const counterSection = [
+  { icon: <i className="icon ti-bag" />, num: '4', title: 'Years in Business', },
+  { icon: <i className="icon ti-user" />, num: '12', title: 'Happy Clients', },
+  // { icon: <i className="icon flaticon-users" />, num: '5', title: 'Technical Experts', },
+  { icon: <i className="icon ti-mobile" />, num: '20', title: 'Number of Projects', },
+];
 
 
 const WorkGlance = [
@@ -69,8 +70,6 @@ const ProjectMap = dynamic(() => import('../components/ProjectMap'), {
 });
 
 export default function Home() {
-  const pastProjectsRef = useRef(null);
-
 
   return (
     <div>
@@ -106,7 +105,7 @@ export default function Home() {
                   <Image src={ourMissionImg} alt="" />
                 </div> */}
                 <div className="our_mission">
-                  <Image src={ourMissionImg} alt="" />
+                  <Image src={ourMissionImg} alt="Mission Img" />
                 </div>
 
               </div>
@@ -139,11 +138,11 @@ export default function Home() {
                 <div className='work_glance_container'>
                   <div className='row'>
                     {WorkGlance.map((item, index) => (
-                      <div key={index} className="work_glance_item col-lg-4 col-md-4 col-4">
+                      <div key={index} className="work_glance_item col-lg-4 col-md-4 col-sm-4 col-4">
                         <div className="inner-box">
                           <div className="image-box">
                             <div className="image">
-                              <Image src={item.Image} />
+                              <Image src={item.Image} alt='work_glance' />
                               <div className="image-content">
                                 <p>{item.Description}</p>
                               </div>
@@ -155,23 +154,6 @@ export default function Home() {
 
                   </div>
                 </div>
-
-                {/* <Link
-                  href="#"
-                  className="site-button btn-icon"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    pastProjectsRef.current.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start',
-                    });
-                  }}
-                >
-                  Know more <i className="fa fa-angle-double-right"></i>
-
-
-                </Link> */}
-
               </div>
             </div>
 
@@ -183,27 +165,20 @@ export default function Home() {
 
 
           <div>
-            <CounterSection />
-          </div>
-
-
-
-
-          {/* <div className="page_section">
-            <div className="page_section_heading">
-              <h2>Download Agrocast Mobile App</h2>
-            </div>
-            <div className="app-btn-bx text-center">
-              <Link href={"#"}><button className='round_btn'><i className="fa fa-android"></i>Android </button> </Link>
-            </div>
-
-            <div className="row">
-              <div className="faq_video">
-                <VideoPopup videoID="t_EuAkunsbM" />
-                <Image src={video_thumbnail} alt="" className="img-cover" />
+            <div className='counter_container'>
+              <div className="row">
+                {counterSection.map((data, index) => (
+                  <div className="col-lg-4 col-md-4 col-sm-12" key={index} style={{ display: "flex", justifyContent: "center" }}>
+                    <div className="counter_style">
+                      <div className="counter_icon">{data.icon}<span className="counter"><CountUp end={data.num} duration={4} />+</span></div>
+                      <span className="counter_text">{data.title}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          </div> */}
+          </div>
+
 
           <div className='page_section'>
             <div className="page_section_heading">
@@ -242,17 +217,8 @@ export default function Home() {
 
 
 
-          {/* <div className='page_section' ref={pastProjectsRef}>
-            <div className="page_section_heading">
-              <h2>Have a question? Contact Us</h2>
-            </div>
-            <HomeContactForm />
-          </div> */}
-
-
 
           <div style={{ display: "none" }}>
-
             <a href="https://clustrmaps.com/site/1bwn5" title="Visit tracker">
               <img src="//www.clustrmaps.com/map_v2.png?d=l478EeMh0ThPcTSQK8w-vYX6ydQJ7z9wUt2gKay9zV8&cl=ffffff" /></a>
 

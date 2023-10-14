@@ -93,6 +93,28 @@ const PrivacyPolicy = () => {
             <p>When you sign up, you voluntarily permit us to access your contact list. However, the information we access will be purely and legally used by us only, for making your sharing of the said post easier for you. The said information is completely safe with us, and we will not be using that information to sell, resell, or for the company&apos;s personal or professional use/s or purpose/s. If you don&apos;t permit us to access your contact list, you won&apos;t be able to share the said post with your contacts.
             </p>
 
+            <h4> Data Collection</h4>
+            <p>This Application does not collect or save or monitor precise information about the location of your mobile device. When a new farm is added, precise location information is fetched to geolocate the position of user.
+
+            </p>
+
+            <h4>Delete Account</h4>
+            <p>You can delete and stop all collection of information by the Application by 
+              <ol>
+                <li>Uninstalling the application</li>
+                <li>Deleting the account from the application. </li>
+              </ol>
+
+
+
+Your Information will be stored as long as the user use the Application. Please note that some or all of the User Provided Data may be required in order for the Application to function properly. You can also request to stop services or delete the account via email (support@agrocastanalytics.com) as well.
+            </p>
+
+           
+
+
+
+
             <h4>Contact Permission</h4>
             <p> We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
             </p>

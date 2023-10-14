@@ -45,15 +45,15 @@ const ImageSlideshow = ({ images }) => {
         autoplay: true,
         appendDots: dots => (
             <div
-              style={{
-                backgroundColor: "rgba(0,0,0,0.2)",
-                // borderRadius: "10px",
-                padding: "10px"
-              }}
+                style={{
+                    backgroundColor: "rgba(0,0,0,0.2)",
+                    // borderRadius: "10px",
+                    padding: "10px"
+                }}
             >
-              <ul style={{ margin: "0px" }}> {dots} </ul>
+                <ul style={{ margin: "0px" }}> {dots} </ul>
             </div>
-          ),
+        ),
         //   customPaging: i => (
         //     <div
         //       style={{
@@ -97,17 +97,11 @@ const ImageSlideshow = ({ images }) => {
             <Slider {...settings}>
                 {images.map((card, index) => (
                     <div key={index} className=''>
-                        <Image src={card.image} alt="Image" />
+                        <Image src={card.image} alt="Slider Image" />
                     </div>
                 ))}
 
-
             </Slider>
-
-
-
-
-
         </div>
 
 

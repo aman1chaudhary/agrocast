@@ -7,7 +7,6 @@ import {
 } from "react-compare-slider";
 import Img1 from "../public/images/compare-slider/original.jpg"
 import Img2 from "../public/images/compare-slider/compare.jpg"
-import Image from "next/image";
 
 export const CustomHandle = ({ style, ...props }) => {
   const handlePositionChange = useCallback(

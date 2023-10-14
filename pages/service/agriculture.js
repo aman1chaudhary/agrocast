@@ -38,12 +38,12 @@ const AgricultureService = () => {
                         <h2>Agrocast Mobile App </h2>
                     </div>
                     <div className="app-btn-bx text-center">
-                        <Link href={"#"}><button className='round_btn'><i className="fa fa-android"></i>Android </button> </Link>
+                        <a href="https://play.google.com/store/apps/details?id=com.agrocast.farmer&pcampaignid=web_share" target='blank'><button className='round_btn'><i className="fa fa-android"></i>Android </button> </a>
                     </div>
                     <div className="row">
                         <div className="faq_video">
                             <VideoPopup videoID="GIsGxCXWKZs" />
-                            <Image src={video_thumbnail} alt="" className="img-cover" />
+                            <Image src={video_thumbnail} alt="Agriculture Service" className="img-cover" />
                         </div>
 
 
@@ -101,7 +101,7 @@ const AgricultureService = () => {
                     <div className="row services_card_container">
                         <div className="col-lg-6 col-md-12 m-b30  ">
                             <div className='services_card_img'>
-                                <Image src={AgriServices2} data-tilt alt='Service' />
+                                <Image src={AgriServices2} data-tilt alt="Agriculture Service" />
                             </div>
 
                         </div>

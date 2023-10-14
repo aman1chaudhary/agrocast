@@ -144,7 +144,7 @@ const ResearchArticles = () => {
                         {ResearchArticlesData.map((article, index) => (
                             <div className="col-md-4" key={index}>
                                 <div className='articles_card'>
-                                    <Image src={article.ArticleImage} />
+                                    <Image src={article.ArticleImage} alt='Research Article' />
 
                                     <h3>{article.ArticleName}</h3>
                                     <div className='card_btn'>

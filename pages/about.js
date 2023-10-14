@@ -186,7 +186,7 @@ const AboutPage = () => {
                                 <div className="row member_details" >
                                     <div className="col-lg-4 col-md-4 col-sm-12">
                                         <div className="member_image">
-                                            <Image src={TeamData.find((member) => member.id === selectedMember).images} alt="" />
+                                            <Image src={TeamData.find((member) => member.id === selectedMember).images} alt="Team Member" />
 
                                         </div>
                                     </div>
@@ -197,12 +197,12 @@ const AboutPage = () => {
                                             <p className="designation">{TeamData.find((member) => member.id === selectedMember).role}</p>
                                             <span className="about">{TeamData.find((member) => member.id === selectedMember).about}</span>
                                             <div className="people_social_icons">
-                                                <a href={TeamData.find((member) => member.id === selectedMember).LinkedIn} target='blank'><Image src={linkedinImg} /></a>
+                                                <a href={TeamData.find((member) => member.id === selectedMember).LinkedIn} target='blank'><Image src={linkedinImg} alt='Team Member LinkedIn'/></a>
                                                 {TeamData.find((member) => member.id === selectedMember).GoogleScholar && (
-                                                    <a href={TeamData.find((member) => member.id === selectedMember).GoogleScholar} target='blank'><Image src={googleScholarImg} /></a>
+                                                    <a href={TeamData.find((member) => member.id === selectedMember).GoogleScholar} target='blank'><Image src={googleScholarImg} alt='Team Member googleScholar'/></a>
                                                 )}
                                                 {TeamData.find((member) => member.id === selectedMember).ResearchGate && (
-                                                    <a href={TeamData.find((member) => member.id === selectedMember).ResearchGate} target='blank'><Image src={researchGateImg} /></a>
+                                                    <a href={TeamData.find((member) => member.id === selectedMember).ResearchGate} target='blank'><Image src={researchGateImg} alt='Team Member researchGate'/></a>
                                                 )}
                                             </div>
                                         </div>

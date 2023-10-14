@@ -16,20 +16,6 @@ const Navbar = () => {
 
     return (
         <div className='main_nav_container'>
-            {/* <div className="short_nav_container">
-                <div className="short_nav_item">
-                        <p><i className="flaticon-phone-call"></i> +91 7600756598</p>
-                        <p><i className="ti-location-pin"></i> Research Park, IIT Gandhinagar, Gujarat, 382355</p>
-
-                </div>
-                <div className="short_nav_item">
-                        <p><i className="fa fa-brands fa-skype"></i> Agency.software</p>
-                        <p><i className="ti-email"></i>support@agrocastanalytics.com</p>
-                </div>
-
-
-            </div> */}
-            
             <div className="navbar_container">
                 <div className="navbar__logo">
                     <Link href="/">
@@ -64,7 +50,7 @@ const Navbar = () => {
 
                             <div className='dropdown_nav_container'>
                                 <Link className="nav__item dropdown_nav" href="#">
-                                    Our Services  <i className="fas fa-solid fa-angle-down"></i>
+                                    Our Services  <i className="fa fa-solid fa-angle-down"></i>
                                 </Link>
 
                                 <div className="dropdown_content">
@@ -72,19 +58,15 @@ const Navbar = () => {
                                     <Link className='dropdown_link' href="/service/agriculture" onClick={handleLinkClick}> Agriculture</Link>
                                     <Link className='dropdown_link' href="/service/water" onClick={handleLinkClick}> Water Resources</Link>
                                     <Link className='dropdown_link' href="/service/climate-risk" onClick={handleLinkClick}> Climate Risk</Link>
-                                    {/* <Link className='dropdown_link' href="/service/solar-power" onClick={handleLinkClick}> Solar Power</Link> */}
 
                                 </div>
                             </div>
                             <Link className="nav__item" href="/research-articles" onClick={handleLinkClick}>
-                            Research Articles
+                                Research Articles
                             </Link>
                             <Link className="nav__item" href="/contact" onClick={handleLinkClick}>
                                 Contact Us
                             </Link>
-
-                            {/* <a href="https://agrocastanalytics.com/gcc-dashboard/index.php" className=' nav__item' target='_blank' rel="noreferrer" ><button className='navbar_btn'>Dashboard</button> </a> */}
-
 
                         </div>
 

@@ -3,27 +3,26 @@ import Slider from "react-slick";
 import Slider1 from '../public/images/main-slider/slide1.jpg';
 import Slider2 from '../public/images/main-slider/slide2.jpg';
 import Slider3 from '../public/images/main-slider/slide3.jpg';
-import Slider4 from '../public/images/main-slider/slide4.jpg';
 import Link from 'next/link';
 import Image from 'next/image';
 
-function SampleNextArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="home_carousel_arrow">
-            <div className="next flaticon-right-arrow" onClick={onClick} />
-        </div>
-    );
-}
+// function SampleNextArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="home_carousel_arrow">
+//             <div className="next flaticon-right-arrow" onClick={onClick} />
+//         </div>
+//     );
+// }
 
-function SamplePrevArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="home_carousel_arrow">
-            <div className="prev flaticon-left-arrow" onClick={onClick} />
-        </div>
-    );
-}
+// function SamplePrevArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="home_carousel_arrow">
+//             <div className="prev flaticon-left-arrow" onClick={onClick} />
+//         </div>
+//     );
+// }
 
 const SliderBanner = () => {
 
@@ -65,7 +64,7 @@ const SliderBanner = () => {
         <div>
             <Slider {...settings}>
                 <div className='home_carousel home_carousel_img1'>
-                    <Image src={Slider1}/>
+                    <Image src={Slider1} alt='Slider Banner'/>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
@@ -81,7 +80,7 @@ const SliderBanner = () => {
                 </div>
 
                 <div className='home_carousel home_carousel_img2'>
-                <Image src={Slider2}/>
+                <Image src={Slider2} alt='Slider Banner'/>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
@@ -94,7 +93,7 @@ const SliderBanner = () => {
                 </div>
 
                 <div className='home_carousel home_carousel_img3'>
-                <Image src={Slider3}/>
+                <Image src={Slider3} alt='Slider Banner'/>
                     <div className='row'>
                         <div className='col-md-7'>
                             <div className="banner-content">
